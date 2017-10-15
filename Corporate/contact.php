@@ -8,7 +8,7 @@
  */
 
 // please change this to your E-Mail address
-$sendTo = "supriyokundu007@gmail.com";
+$sendTo = "opyvovarova087@gmail.com";
 
 $action = $_POST['action'];
 
