@@ -1,0 +1,31 @@
+$output-bourbon-deprecation-warnings: false //Ждём обновления node-bourbon до 5-й версии
+
+@import "bourbon"
+
+$default-font: "roboto", sans-serif
+$h1_font: "webfont", bold
+$accent: orange
+$li_padding: 5px
+
+
+$color: #FF6347
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+$blue: #add8e6
+
+$w: 28px
+$h: 3px
+
+$animation-delay: .7s
+
+@mixin kerning($kerning)
+  letter-spacing: $kerning + px
+
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+      -ms-border-radius: $radius
+        border-radius: $radius
+
+
