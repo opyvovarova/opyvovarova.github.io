@@ -1,0 +1,166 @@
+include components/defaults/mixins
+
+//- Site markup
+
+doctype html
+html(lang='ru')
+	head
+		meta(charset='utf-8')
+		title Title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+	
+	body.ishome
+		header.main-head
+			.container
+				.row
+					.mnu-line.clearfix
+						.col-lg-2.col-lg-4.col-md-4.col-sm-6.col-xs-6
+							a(href="#").logo
+								i.fa.fa-circle-thin
+						.col-md-4
+							nav.main-mnu.hidden-md.hidden-sm.hidden-xs
+								ul
+									li.active
+										a(href="#") Home
+									li
+										a(href="#") About
+									li
+										a(href="#") Contact
+						.col-lg-3.col-md-4.col-sm-6.col-xs-6
+							.search-form
+								form
+									input(type="text" placeholder="Search Here")
+									button(type="submit")
+										i.fa.fa-search
+							a(href="#").toggle-mnu.hidden-lg
+								span
+						.col-xs-12
+							nav.main-mnu.hidden-mnu.hidden-lg.clearfix
+								ul
+									li.active
+										a(href="#") Home
+									li
+										a(href="#") About
+									li
+										a(href="#") Contact
+					.header-content.clearfix
+						.col-sm-12
+							h1 Web Design
+							p Fusce dapibus, tellus ac cursus commodo, tortor mauris
+								| condimentum , ut fermentum massa justo sit amet
+								| erat a ante venenatis dapibus posuere veli
+							a(href="#" class="button") Really?
+							.play_button
+								img(src="img/play-button.svg")
+
+		section.content
+			.container
+				.row
+					.content_item
+						.col-md-3.col-sm-12.col-xs-12
+							.bg-img
+								img(src="img/section_item_four.jpg" data-mfp-src="#test-popup" class="open-popup-link").img-responsive.content-img
+							h3 Ridiculus Ornare
+							p Ullamcorper
+					.content_item
+						.col-md-3.col-sm-12.col-xs-12
+							.bg-img
+								img(src="img/section_item_two.jpg" data-mfp-src="#test-popup" class="open-popup-link").img-responsive.content-img
+							h3 Lorem Cursus
+							p ligula
+					.content_item
+						.col-md-3.col-sm-12.col-xs-12
+
+							.bg-img
+								img(src="img/section_item_three.jpg" data-mfp-src="#test-popup" class="open-popup-link").img-responsive.content-img
+							h3 Condimentum ultricied
+							p Consectetur
+					.content_item
+						.col-md-3.col-sm-12.col-xs-12
+							.bg-img
+								img(src="img/section_item_four.jpg" data-mfp-src="#test-popup" class="open-popup-link").img-responsive.content-img
+							h3 Ridiculus Ornare
+							p Ullamcorper
+		section
+			.footer_top
+				.container
+					.row
+						.col-md-3.col-sm-6.col-xs-12
+							footer_item
+								h4 Follow Us
+								ul.footer_nav
+									li
+										a(href="#") Twitter
+									li
+										a(href="#") Facebook
+
+									li
+										a(href="#") Linkedin
+									li
+										a(href="#") Pinterest
+									li
+										a(href="#") YouTube
+						.col-md-3.col-sm-6.col-xs-12
+							footer_item
+								h4 Get to know us
+								ul.footer_nav
+									li
+										a(href="#") About
+									li
+										a(href="#") Policies
+
+									li
+										a(href="#") Careers
+									li
+										a(href="#") Press
+									li
+										a(href="#") Developers
+						.col-md-3.col-sm-6.col-xs-12
+							footer_item
+								h4 locations
+								ul.footer_nav
+									li
+										a(href="#") Detroit
+									li
+										a(href="#") London
+
+									li
+										a(href="#") Florida
+									li
+										a(href="#") Las Vegas
+									li
+										a(href="#") California
+						.col-md-3.col-sm-6.col-xs-12
+							footer_item_about
+								h4.mission  Our mission
+								p.about   Fusce dapibus, tellus ac cursus commodo, tortor mauris
+									| condimentum nibh, ut fermentum massa justo sit amet
+									| risus. Integer posuere erat a ante venenatis dapibus
+									| posuere velit aliquet. Praesent commodo cursus magna,
+									| vel scelerisque nisl consectetur et. Sed posuere consectetur
+		footer
+			.footer_bottom
+				.container
+					.row
+						.col-md-12.col-sm-12.col-xs-12
+							p Copyright&copy; 2016 samiralley
+
+
+		.hidden
+			div(id="test-popup" class="white-popup mfp-hide")
+				h1 Amet Condimentum
+				p  Lorem ipsum dolor sit amet, erat molestie, sed in dolor. Nibh lectus mus justo in accumsan elit. Ullamcorper sed at diam consequat, praesent sapien mattis egestas. Lobortis eget erat rhoncus fusce, sodales non, odio vel, dolor sed eu vestibulum ultricies. Volutpat risus vestibulum suscipit, mauris etiam urna pretium commodo, sit pulvinar, ut nunc metus quis eros. Mauris sed tempor morbi dolor donec class.
+
+					| Tortor condimentum sapien venenatis, sit sociis, ultricies dolor eu imperdiet volutpat, tempus pellentesque integer sit aliquam nisl. Nulla sem adipisicing dapibus, elit nunc, ridiculus elit. Quam massa velit volutpat, velit sit nunc ridiculus sed nulla. Elementum pulvinar vel et quis dolor, amet vel pede libero. Tempor sed quidem, vero porttitor a purus vitae vestibulum.
+
+					| Proin eu eget aptent donec nulla. Velit laoreet sed odio ac, dictumst gravida felis neque, ut nec potenti massa, convallis nullam, urna sed ut magna. Luctus et non, turpis proin, ipsum et ut, tristique vel. In ut eleifend enim, purus quis pharetra duis lorem pulvinar, mattis vitae ultrices mi sed at. Laboriosam venenatis malesuada vestibulum lorem ullamcorper, iaculis sodales, elit id, urna consectetuer faucibus tempor viverra, metus sed et iure euismod in pede. Suspendisse dui porttitor mauris at semper, nibh volutpat fermentum, enim libero morbi potenti felis. Nulla a nulla ac, nibh odio nec sollicitudin non. Curabitur sollicitudin, duis sed commodo, quam fringilla sed sem ipsum, tempor arcu consequat dolor. Integer velit habitasse. Sagittis vehicula morbi. Nec ab, ut ut erat turpis convallis velit. Elit quisque lectus cras, erat non massa, neque urna pede, metus dictum neque adipiscing molestie ultrices nunc, est lorem.
+
+					| In vestibulum et viverra, augue sed commodo eu voluptas. Tristique adipiscing facere, semper massa curae maecenas at mauris. Dictum molestie rutrum dignissim commodo, vel lorem, molestie non odio convallis quam, aliquip sed ut proin senectus suscipit. A a class mi ac suspendisse rutrum, urna tincidunt sodales sit velit, tincidunt vitae orci morbi euismod mauris. Aenean magna tincidunt quis, tempus diam vitae et, nulla id varius, sit urna metus pede, mi a. A a habitant libero, nam nec duis. Fusce sit, dui vulputate, rhoncus diam commodo enim vulputate sit in. Id velit potenti sed donec ut, et massa ultrices wisi vestibulum hendrerit. Viverra metus, sodales duis.
+
+
+		link(rel='stylesheet', href='/css/main.min.css')
+		script(src='js/libs.min.js')
+		script(src='js/scripts.min.js')
+

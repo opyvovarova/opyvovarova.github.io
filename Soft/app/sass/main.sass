@@ -1,0 +1,416 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//.no-gutter > [class*='col-']
+//	padding-right: 0
+//	padding-left: 0
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 105%
+	height: auto
+
+.ishome
+	h1
+		margin-top: 0
+.main-head
+	min-width: 1140px
+/*****Header****/
+
+.main-head
+	background-image: url(../img/bg_header.jpg)
+	background-size: cover
+	background-position: top center
+	min-height: 100vh
+	min-width: 100vw
+	overflow: hidden
+	margin-bottom: 50px
+	.mnu-line
+		padding-top: 20px
+		height: 100px
+		line-height: 100px
+		min-width: 100%
+		position: fixed
+		transition: 0.35s all ease
+		z-index: 100
+		&::after
+			content: " "
+			height: 1px
+			min-width: 100%
+			background-color: rgba(250,250,250,0.5)
+			margin-top: 130px
+
+	.logo
+		display: block
+		width: 100px
+		padding-top: 20px
+		//margin-left: -60px
+		.fa
+			font-size: 35px
+			color: #fff
+
+	nav
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+		li
+			display: inline-block
+	.main-mnu
+		text-align: center
+		> ul
+			> li
+				> a
+					display: block
+					padding-right: 50px
+					text-decoration: none
+					font-family: $boldFont
+					text-transform: uppercase
+					color: #ffff
+					transition: all 0.3s ease-in
+				&.active
+					a
+						color: #da7074
+						text-decoration: underline
+.search-form
+	float: right
+	position: relative
+	display: inline-block
+	top: 5%
+	right: 50%
+	transform: translateX(40%)
+	width: 200px
+form
+	display: block
+	position: relative
+
+	//width: 200px
+	vertical-align: middle
+	white-space: nowrap
+	left: 0
+	right: 0
+	top: 45px
+	margin: auto
+	transition: all ease 0.5s
+	&::after
+		content: ""
+		display: block
+		clear: both
+
+input
+	font-size: 18px
+	border: none
+	border-radius: 50px
+	outline: 0
+	font-family: $boldFont
+	text-align: right
+	color: #da7074
+	padding: 10px
+	padding-right: 42px
+	transition: all ease 0.5s
+	width: 0
+	float: right
+	right: 0
+	background-color: transparent
+button
+	position: absolute
+	border: none
+	height: 50px
+	width: 50px
+	border-radius: 50px
+	background-color: rgba(0,0,0,0)
+	top: -30px
+	right: 15px
+		//bottom: 0
+	margin: auto
+	.fa
+		font-size: 24px
+		color: #fff
+
+.search-form:hover
+	form
+		width: 100%
+		input, input:hover
+			background-color: #fff
+			width: 100%
+			text-align: center
+			cursor: pointer
+		.fa
+			color: #fff
+
+/**Toggle Menu**/
+
+
+.toggle-mnu
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 30px
+	span:after, span:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #fff
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+	&.on span
+		background-color: transparent
+	&.on span:before
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after
+		transform: rotate(-45deg) translate(6px, -7px)
+
+.toggle-mnu
+	position: absolute
+	right: 150px
+.hidden-mnu
+	background-color: rgba(0,0,0,0.5)
+	display: none
+	position: relative
+	top: 20px
+	li
+		display: block
+
+	> ul
+		padding: 20px 0
+		> li
+			&.active
+				a
+					text-decoration: none
+					color: #fff
+			> a
+				&:hover
+					color: #000
+					background-color: #FFFFFF
+					text-decoration: none
+
+/**Fixed Scroll**/
+.scrolled
+	height: 50px
+	padding: 0
+	line-height: 50px
+	background: rgba(0,0,0,0.3)
+	transition: 0.35s all ease
+	width: 100%
+	transform: translateX(-5%)
+	.logo
+		//margin-left: 85px
+		margin-top: -25px
+	.main-mnu
+		//padding-top: -50px
+		margin-top: -15px
+		transition: 0.35s all ease
+		transform: translateX(5%)
+		li
+			color: #fff
+			transition: 0.2s all ease-in-out
+	.search-form
+		margin-top: -25px
+	.toggle-mnu
+		margin-bottom: -25px
+
+.header-content
+	padding-top: 45%
+	text-align: center
+	position: relative
+	h1
+		font-family: $hFont
+		font-size: 90px
+		color: #fff
+		margin-bottom: 20px
+	p
+		font-family: $pFont
+		font-size: 20px
+		width: 45%
+		margin: 0 auto
+		color: #fff
+		margin-bottom: 50px
+	a
+		text-decoration: none
+		text-underline: none
+		color: #fff
+		.button
+		display: inline-block
+		font-family: $boldFont
+		text-transform: uppercase
+		font-size: 14px
+		background-color: #da7074
+		padding: 10px 50px
+		border-radius: 25px
+		margin-bottom: 250px
+	.play_button
+		position: absolute
+		width: 80px
+		left: 48%
+		bottom: -30%
+		img
+			text-align: center
+			width: 100%
+			margin-bottom: 40px
+
+
+		img:hover
+			cursor: pointer
+			transform: rotate(90deg)
+			transition: all 0.5s ease-in-out
+			cursor: pointer
+
+
+.content_item
+	.bg-img
+		border: 10px solid #c0c0c0
+		min-width: 100%
+		overflow: hidden
+		.content-img
+			padding: -10px
+			width: 100%
+			height: 300px
+			background-position: center
+			transition: all 1s ease
+			-moz-transition: all 1s ease
+			-webkit-transition: all 1s ease
+			-ms-transition: all 1s ease /* IE 9 */
+			-o-transition: all 1s ease
+			-webkit-filter: brightness(100%)
+		.content-img:hover
+			transform: scale(1.5)
+			-moz-transform: scale(1.5)
+			-webkit-transform: scale(1.5)
+			-o-transform: scale(1.5)
+			-ms-transform: scale(1.5) /* IE 9 */
+			background-color: rgba(0,0,0,0.8)
+			-webkit-filter: brightness(25%)
+	h3
+		font-family: $boldFont
+		font-size: 18px
+		color: #fff
+		text-transform: uppercase
+		position: absolute
+		text-align: center
+		top: 180px
+		left: 25%
+	p
+		font-family: $boldFont
+		font-size: 14px
+		color: #fff
+		position: absolute
+		left: 45%
+		bottom: 45px
+
+/******Popup***/
+.white-popup
+	position: relative
+	background: #FFF
+	padding: 20px
+	width: auto
+	max-width: 500px
+	margin: 20px auto
+	h1
+		text-align: center
+		text-transform: uppercase
+		font-size: 25px
+		font-family: $lightFont
+	p
+		font-size: 14px
+
+
+.footer_top
+	padding-top: 50px
+	h4
+		font-family: $boldFont
+		color: #000
+		text-transform: uppercase
+
+	.footer_nav
+		list-style: none
+		li
+			a
+				font-family: $boldFont
+				font-style: italic
+				color: #a5a5a5
+				text-transform: none
+				text-decoration: none
+	.mission
+		font-family: $pFont
+		text-transform: uppercase
+		font-size: 18px
+	.about
+		font-family: "Georgia", sans-serif
+		font-size: 14px
+		font-style: italic
+		color: #7c7c7c
+
+footer
+	position: relative
+	width: 100%
+	left: 0
+	bottom: 0
+	height: 100px
+	background-color: #000
+	p
+		font-family: "Georgia", sans-serif
+		color: #464646
+		font-size: 12px
+		font-style: italic
+		text-align: center
+		padding-top: 25px
+.hidden
+	display: none
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
