@@ -1,0 +1,365 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "normalize"
+@import "_mixins/mixins"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+html
+	font-size: 10px
+
+
+body
+	position: relative
+	min-height: 100%
+	min-width: 320px
+	font-family: $contentFont
+	overflow-x: hidden
+	box-sizing: border-box
+
+
+a, a:focus, a:hover, a:active
+	color: inherit
+	text-decoration: none
+	&:hover
+		color: inherit
+	&:visited
+		color: inherit
+
+*,
+*::after,
+*::before
+	margin: 0
+	padding: 0
+	box-sizing: inherit
+
+.container-fixed
+	margin: 0 auto
+	max-width: 980px
+	//background-color: aquamarine
+	width: 100%
+
+.wrapper
+	min-height: 100%
+	margin-bottom: -39rem
+
+.hidden
+	display: none
+
+.top_line
+	height: 8rem
+	min-width: 100%
+	line-height: 8rem
+	border-bottom: 2px solid #36afcd
+	.logo-box
+		padding-top: 1.2rem
+	.top-description
+		font-family: $contentFont
+		font-size: 1.3rem
+		color: $greyColorBold
+		line-height: 1.5
+		padding: 3.3rem 0 0 3.7rem
+	.top-callback
+		//padding: 2.9rem 0 0 3.5rem
+		.phone-description
+			padding-top: 1.6rem
+			padding-right: 2.5rem
+			font-size: 1.3rem
+			font-family: $contentFont
+			color: $greyColorlight
+		.button
+			padding: 1.2rem 2.3rem
+			background-color: #fff
+			border: 1px solid $linkColor
+			font-family: $contentFontBold
+			color: $linkColor
+			font-size: 1.5rem
+.top_mnu
+	.nav-justified > li > a
+		text-transform: uppercase
+
+	.nav-justified  > li > a:hover,
+	.nav-justified  > li > a:focus
+		color: #036ad0
+		background-color: #fff
+
+	.dropdown-menu > li > a
+		text-transform: uppercase
+	.dropdown-menu > li > a:hover,
+	.dropdown-menu > li > a:focus
+		color: #036ad0
+
+
+.title-search
+	display: none
+	background-color: #a7d4f5
+	border: none
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .1)
+	height: 6rem
+	padding: 1.3rem 0
+	width: 100%
+	position: absolute
+	right: 0
+	z-index: 9
+	form
+		position: relative
+		.search-input-div
+			padding-right: 12rem
+			width: 100%
+			.search_input
+				background: #fff
+				border: none
+				color: #444
+				display: block
+				height: 3rem
+				font-size: 1.5rem
+				line-height: 1.8rem
+				padding: 0 1rem
+				vertical-align: top
+				width: 100%
+		.search-button-div
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 12rem
+			.btn-search
+				margin-left: 1rem
+				background-color: $linkColor
+				border: none
+				color: #fff
+				padding: 1rem 2rem
+			.fa-close
+				color: $greyColorBold
+				font-size: 2.4rem
+				margin-left: 0.6rem
+				cursor: pointer
+
+.slider
+	.slide
+		position: relative
+		top: 0
+		&-bg
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			min-height: 53.5rem
+		&-content
+			position: relative
+			z-index: 1
+			top: 9rem
+			height: 33rem
+			width: 60rem
+			background-color: rgba(255, 255, 255, 0.7)
+			margin-bottom: 16rem
+			h1
+				font-family: $contentFont
+				font-size: 3rem
+				text-transform: uppercase
+				padding-left: 6.5rem
+				padding-top: 6rem
+				width: 80%
+			p
+				font-family: $contentFont
+				font-size: 1.5rem
+				color: $greyColorBold
+				padding-left: 6.5rem
+				margin-bottom: 3.5rem
+
+			.button_s
+				display: inline-block
+				font-family: $contentFont
+				font-size: 1.5rem
+				background-color: $linkColor
+				color: #fff
+				padding: 1.5rem 4.5rem
+				margin-bottom: 5rem
+				margin-left: 6.5rem
+
+.owl-dots
+	position: relative
+	bottom: 4.5rem
+	width: 100%
+	text-align: center
+	.owl-dot
+		display: inline-block
+		margin: 0 3px
+		text-align: center
+		width: 0.7rem
+		height: 0.7rem
+		background-color: #fff
+		border-radius: 10em
+		cursor: pointer
+		transition: background-color .25s ease
+	.active
+		background-color: transparent
+		border: 1px solid #fff
+		width: 1rem
+		height: 1rem
+
+.services
+	background-color: $lightblue
+	margin-top: -3rem
+	.img_services
+		padding-top: 6.5rem
+		padding-bottom: 2.5rem
+	h3
+		font-family: $contentFont
+		font-size: 1.3rem
+		color: #444444
+		width: 70%
+		margin-bottom: 6rem
+
+.provided_services
+	h2
+		padding-top: 6rem
+		padding-left: 8.5rem
+		padding-bottom: 3rem
+		font-family: $contentFont
+		font-size: 3rem
+		&::after
+			content: " __"
+			color: $accent
+			width: 100%
+			position: absolute
+			left: 4.5rem
+			top: 6rem
+
+	.description_title
+		font-family: $contentFont
+		font-size: 1.5rem
+		color: #444444
+		padding-left: 8.5rem
+		padding-bottom: 5rem
+	.gallery
+		border-bottom: 1px solid #dfdfdf
+		margin-bottom: 5.5rem
+		.blog_item
+			.responsive-img
+				display: inline-block
+				height: 17.3rem
+				width: 31rem
+				margin-bottom: 2.5rem
+			h4
+				font-family: $contentFontBold
+				font-size: 1.6rem
+				color: $accent
+				padding-bottom: 2rem
+
+			p
+				font-family: $contentFont
+				font-size: 1.5rem
+				padding-bottom: 5.5rem
+	.banner
+		padding-top: 6rem
+		background: linear-gradient(to right, #27a0d3 -50%, #3bbbbf 150%)
+		margin-bottom: 4.5rem
+		h3
+			font-family: $contentFont
+			font-size: 3rem
+			padding-left: 5.5rem
+			padding-bottom: 3rem
+			color: #fff
+		p
+			font-family: $contentFont
+			font-size: 1.5rem
+			padding-left: 5.5rem
+			color: #fff
+			padding-bottom: 4.7rem
+		.button_s
+			display: inline-block
+			font-family: $contentFont
+			font-size: 1.5rem
+			background-color: $linkColor
+			color: #fff
+			padding: 1.5rem 4.5rem
+			margin-top: 2.5rem
+			margin-bottom: 5rem
+			margin-left: 6.5rem
+footer
+	background-color: #036ad0
+	.top_footer
+		padding-top: 5rem
+		border-bottom: 1px solid #5f8dbf
+		.phone
+			h3
+				padding-left: 5rem
+				color: #fff
+				font-size: 2.4rem
+		.info
+			h3
+
+				font-family: $contentFont
+				color: #fff
+				font-size: 1.8rem
+				padding-bottom: 3.5rem
+			ul,li
+				list-style-type: none
+				padding-bottom: 2rem
+				a
+					font-family: $contentFont
+					font-size: 1.5rem
+					color: #a4c4e4
+		.store
+			h3
+				padding-left: 5rem
+				font-family: $contentFont
+				color: #fff
+				font-size: 1.8rem
+				padding-bottom: 3.5rem
+			ul,li
+
+				list-style-type: none
+				padding-bottom: 2rem
+				a
+					padding-left: 5rem
+					font-family: $contentFont
+					font-size: 1.5rem
+					color: #a4c4e4
+		.social_icon
+			ul,	li
+				list-style-type: none
+				li
+					display: inline-block
+					padding-left: 3rem
+	.footer_bootom
+		padding-top: 2rem
+		padding-bottom: 2rem
+		p
+			font-family: $contentFont
+			font-size: 1.3rem
+			color: #a4c4e4
+			span
+				color: #fff
+				text-decoration: underline
+				text-decoration-color: #a4c4e4
+		.studio
+			padding-left: 25rem
+			.create
+				padding-top: -1rem
+
+@import "media"
