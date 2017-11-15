@@ -1,3 +1,6 @@
+if(!window.jQuery){
+document.write('<scr' + 'ipt type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></scr' + 'ipt>');
+}
 $(document).ready(function ( ) {
 
     var imageO;
