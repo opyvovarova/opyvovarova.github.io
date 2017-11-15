@@ -1,6 +1,35 @@
-if(!window.jQuery){
-document.write('<scr' + 'ipt type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></scr' + 'ipt>');
+(function() {
+
+var jQuery;
+
+if (window.jQuery === undefined || window.jQuery.fn.jquery !== '3.2.1') {
+var script_tag = document.createElement('script');
+script_tag.setAttribute("type","text/javascript");
+script_tag.setAttribute("src","https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js");
+script_tag.onload = scriptLoadHandler;
+script_tag.onreadystatechange = function () { // IE
+if (this.readyState == 'complete' || this.readyState == 'loaded') {
+scriptLoadHandler();
 }
+};
+
+(document.getElementsByTagName("head")[0] || document.documentElement).appendChild(script_tag);
+} else {
+// Версия jQuery которую мы загружаем для сайта единственна
+$ = window.jQuery;
+main();
+}
+
+/******** Запустить мгновенно после загрузки jQuery ******/
+function scriptLoadHandler() {
+// Восстановим $ и window.jQuery к первоначальному виду
+$ = window.jQuery.noConflict(true);
+// Главная функция
+main();
+}
+
+function main() {
+// Здесь наши jQuery дела
 $(document).ready(function ( ) {
 
     var imageO;
@@ -237,3 +266,7 @@ $(function(){
  });
 
 });
+    
+    }
+
+})();
