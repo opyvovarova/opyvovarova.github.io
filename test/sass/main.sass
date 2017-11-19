@@ -70,36 +70,46 @@ a, a:focus, a:hover, a:active
 	display: none
 
 .top_line
-	height: 8rem
 	min-width: 100%
-	line-height: 8rem
 	border-bottom: 2px solid #36afcd
 	.logo-box
 		padding-top: 1.2rem
+		padding-bottom: 1rem
+		margin-left: -2rem
 	.top-description
 		font-family: $contentFont
 		font-size: 1.3rem
 		color: $greyColorBold
-		line-height: 1.5
-		padding: 3.3rem 0 0 3.7rem
+		padding-top: 2.7rem 
 	.top-callback
-		//padding: 2.9rem 0 0 3.5rem
+		.callback
+			padding-top: 2.7rem
+			margin-right: -5rem
+			.button
+				padding: 1.2rem 2.3rem
+				background-color: #fff
+				border: 1px solid $linkColor
+				font-family: $contentFontBold
+				color: $linkColor
+				font-size: 1.5rem
 		.phone-description
-			padding-top: 1.6rem
-			padding-right: 2.5rem
-			font-size: 1.3rem
-			font-family: $contentFont
-			color: $greyColorlight
-		.button
-			padding: 1.2rem 2.3rem
-			background-color: #fff
-			border: 1px solid $linkColor
-			font-family: $contentFontBold
-			color: $linkColor
-			font-size: 1.5rem
+			padding-top: 2.1rem
+			.phone_number
+				display: block
+				padding-left: 6.5rem
+				font-size: 1.8rem
+				color: #000
+			p 
+				font-size: 1.3rem
+				font-family: $contentFont
+				color: $greyColorlight
+				padding-left: 2.1rem
+		
 .top_mnu
 	.nav-justified > li > a
 		text-transform: uppercase
+		padding-top: 2.7rem
+		padding-bottom: 2.3rem
 
 	.nav-justified  > li > a:hover,
 	.nav-justified  > li > a:focus
@@ -108,10 +118,13 @@ a, a:focus, a:hover, a:active
 
 	.dropdown-menu > li > a
 		text-transform: uppercase
+		.fa	
+			color: #b5b5b5
 	.dropdown-menu > li > a:hover,
 	.dropdown-menu > li > a:focus
 		color: #036ad0
-
+	
+	
 
 .title-search
 	display: none
@@ -167,28 +180,29 @@ a, a:focus, a:hover, a:active
 			left: 0
 			right: 0
 			bottom: 0
-			min-height: 53.5rem
 		&-content
 			position: relative
 			z-index: 1
-			top: 9rem
-			height: 33rem
-			width: 60rem
-			background-color: rgba(255, 255, 255, 0.7)
+			top: 5rem
+			width: 65%
+			background-color: rgba(255, 255, 255, 0.95)
 			margin-bottom: 16rem
 			h1
 				font-family: $contentFont
 				font-size: 3rem
 				text-transform: uppercase
-				padding-left: 6.5rem
+				padding-left: 8.5rem
 				padding-top: 6rem
 				width: 80%
+				letter-spacing: 0.15rem
+				line-height: 1.4em
 			p
 				font-family: $contentFont
 				font-size: 1.5rem
 				color: $greyColorBold
-				padding-left: 6.5rem
-				margin-bottom: 3.5rem
+				padding-left: 8.5rem
+				margin-bottom: 3rem
+				width: 60%
 
 			.button_s
 				display: inline-block
@@ -196,9 +210,9 @@ a, a:focus, a:hover, a:active
 				font-size: 1.5rem
 				background-color: $linkColor
 				color: #fff
-				padding: 1.5rem 4.5rem
+				padding: 1.1rem 5rem
 				margin-bottom: 5rem
-				margin-left: 6.5rem
+				margin-left: 8.5rem
 
 .owl-dots
 	position: relative
@@ -207,54 +221,58 @@ a, a:focus, a:hover, a:active
 	text-align: center
 	.owl-dot
 		display: inline-block
-		margin: 0 3px
+		margin: 0 1rem
 		text-align: center
-		width: 0.7rem
-		height: 0.7rem
+		width: 0.8rem
+		height: 0.8rem
 		background-color: #fff
 		border-radius: 10em
 		cursor: pointer
 		transition: background-color .25s ease
 	.active
 		background-color: transparent
-		border: 1px solid #fff
-		width: 1rem
-		height: 1rem
+		border: 2px solid #fff
+		width: 1.3rem
+		height: 1.3rem
 
 .services
 	background-color: $lightblue
-	margin-top: -3rem
-	.img_services
-		padding-top: 6.5rem
-		padding-bottom: 2.5rem
-	h3
-		font-family: $contentFont
-		font-size: 1.3rem
-		color: #444444
-		width: 70%
-		margin-bottom: 6rem
+	margin-top: -2.9rem
+	.services-box
+		.img_services
+			padding-top: 6.5rem
+			padding-bottom: 1rem
+			display: block
+			margin: auto
+		h3
+			font-family: $contentFont
+			font-size: 1.6rem
+			color: #444444
+			margin-bottom: 6rem
+			text-align: center
+			
+
 
 .provided_services
 	h2
-		padding-top: 6rem
-		padding-left: 8.5rem
-		padding-bottom: 3rem
+		padding-top: 2.5rem
+		padding-left: 7.5rem
 		font-family: $contentFont
 		font-size: 3rem
+		line-height: 1.4em
 		&::after
-			content: " __"
-			color: $accent
-			width: 100%
-			position: absolute
-			left: 4.5rem
-			top: 6rem
-
+			content: "\2014"
+			display: inline-block
+			color: $blue
+			position: relative
+			left: -41rem
+			
 	.description_title
 		font-family: $contentFont
 		font-size: 1.5rem
 		color: #444444
 		padding-left: 8.5rem
-		padding-bottom: 5rem
+		padding-bottom: 3.5rem
 	.gallery
 		border-bottom: 1px solid #dfdfdf
 		margin-bottom: 5.5rem
@@ -263,33 +281,34 @@ a, a:focus, a:hover, a:active
 				display: inline-block
 				height: 17.3rem
 				width: 31rem
-				margin-bottom: 2.5rem
+				object-fit: cover
+				margin-bottom: 1.5rem
 			h4
 				font-family: $contentFontBold
 				font-size: 1.6rem
 				color: $accent
-				padding-bottom: 2rem
-
+				
 			p
 				font-family: $contentFont
 				font-size: 1.5rem
-				padding-bottom: 5.5rem
+				padding-bottom: 3.5rem
 	.banner
-		padding-top: 6rem
 		background: linear-gradient(to right, #27a0d3 -50%, #3bbbbf 150%)
 		margin-bottom: 4.5rem
 		h3
 			font-family: $contentFont
 			font-size: 3rem
+			padding-top: 1rem
 			padding-left: 5.5rem
-			padding-bottom: 3rem
 			color: #fff
+			line-height: 1.5em
 		p
 			font-family: $contentFont
 			font-size: 1.5rem
 			padding-left: 5.5rem
 			color: #fff
-			padding-bottom: 4.7rem
+			padding-bottom: 3.5rem
+
 		.button_s
 			display: inline-block
 			font-family: $contentFont
@@ -297,55 +316,60 @@ a, a:focus, a:hover, a:active
 			background-color: $linkColor
 			color: #fff
 			padding: 1.5rem 4.5rem
-			margin-top: 2.5rem
+			margin-top: 7rem
 			margin-bottom: 5rem
 			margin-left: 6.5rem
 footer
-	background-color: #036ad0
+	background-color: #1d64aa
 	.top_footer
-		padding-top: 5rem
+		padding-top: 2rem
 		border-bottom: 1px solid #5f8dbf
 		.phone
 			h3
-				padding-left: 5rem
 				color: #fff
 				font-size: 2.4rem
+				
 		.info
+			margin-left: 7rem
 			h3
 
-				font-family: $contentFont
+				font-family: $contentFontBold
 				color: #fff
 				font-size: 1.8rem
-				padding-bottom: 3.5rem
+				padding-bottom: 1.5rem
+			
 			ul,li
 				list-style-type: none
-				padding-bottom: 2rem
+				padding-bottom: 1rem
 				a
 					font-family: $contentFont
 					font-size: 1.5rem
 					color: #a4c4e4
 		.store
+			margin-left: -7rem
 			h3
 				padding-left: 5rem
-				font-family: $contentFont
+				font-family: $contentFontBold
 				color: #fff
 				font-size: 1.8rem
-				padding-bottom: 3.5rem
+				padding-bottom: 1.5rem
 			ul,li
 
 				list-style-type: none
-				padding-bottom: 2rem
+				padding-bottom: 1rem
 				a
 					padding-left: 5rem
 					font-family: $contentFont
 					font-size: 1.5rem
 					color: #a4c4e4
 		.social_icon
+			padding-top: 2rem
+			padding-left: 5rem			
 			ul,	li
 				list-style-type: none
 				li
 					display: inline-block
-					padding-left: 3rem
+					padding-left: 2.1rem
 	.footer_bootom
 		padding-top: 2rem
 		padding-bottom: 2rem
@@ -358,7 +382,9 @@ footer
 				text-decoration: underline
 				text-decoration-color: #a4c4e4
 		.studio
-			padding-left: 25rem
+			p
+				display: block
+				padding-left: 28rem
 			.create
 				padding-top: -1rem
 
