@@ -106,13 +106,14 @@
   .top_line .top-callback .callback .button
     font-size: 1.3rem
     padding: 1rem 1.5rem
-
+  .top_line .top-callback .phone-description 
+    padding-left: 3rem
   .top_line .top-callback .phone-description .phone_number
     font-size: 1.4rem
+    padding-top: 1rem
     padding-left: 3rem
   .top_line .top-callback .phone-description p 
     font-size: 1rem
-    padding-left: 1rem
   footer .top_footer .store
     padding-left: 3.5rem   
   footer .footer_bootom .studio p
@@ -121,11 +122,22 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px)
-	/**/
+  .top_line .top-callback .callback
+    margin-right: -8rem
+  .top_line .top-callback .phone-description 
+    padding-left: 8rem
+    padding-top: 1.5rem
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px)
   .top_line .top-callback .callback
     margin-right: -8rem
+  .top_line .top-callback .phone-description 
+    padding-left: 8rem
+    padding-top: 1.5rem
+  .top_line .top-callback .phone-description .phone_number
+    font-size: 1.4rem
+    padding-left: 3rem
+ 
   footer .footer_bootom .studio p
     padding-left: 28rem
