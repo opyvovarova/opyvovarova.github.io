@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button callBack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.2.1.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+  <div>some text
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet placeat expedita consectetur enim at iusto facilis eius. Sapiente exercitationem commodi doloremque necessitatibus voluptatem perspiciatis obcaecati laudantium ab libero blanditiis!
+  </div>
+  
+   <div class="window_wrap">
+       <div class="window">
+           <div class="window_close">X</div>
+           <p>Оставьте Ваш телефон<br/> и наш консультант свяжется с Вами</p>
+           <form id="backPhone" name="backPhone">
+               <input name="telephone" type="tel" id="telForm" maxlength="20">
+               <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
+           </form>
+       </div>
+   </div>
+   
+    <div class="telButton anim">
+        <div class="telButton_border"></div>
+        <div class="telButton_background"><span></span></div>
+        <div class="telButton_hover">Заказать звонок</div>        
+    </div>
+    
+</body>
+</html>
