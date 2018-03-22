@@ -1,0 +1,191 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+
+
+
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+
+//Extra small: >0
++media-breakpoint-down(xs)
+  .little-top-pannel
+    padding-top: 5rem
+    padding-bottom: 1rem
+
+  .phone-little
+    ul
+      padding: 0
+      margin: 0
+      list-style: none
+    li
+      display: block
+      float: left
+      color: $accent
+      font-family: "Arial", sans-serif
+      text-transform: uppercase
+      font-size: 1rem
+      font-weight: bold
+      margin-bottom: -5px
+      margin-left: 2rem
+      .dark
+        font-size: 1rem
+        color: $dark-gray
+      .green
+        color: $green
+        font-size: 15px
+      .green_txt
+        color: $green
+        text-decoration: underline
+  .top_slider .banner
+    width: 40rem
+    height: auto
+    margin-left: 4rem
+  .feedback_in .feedback_invitation iframe
+    height: 20.5rem
+    width: 40rem
+  .articles
+    background-image: none
+  .footer .footer_callback
+    text-align: center
+  .basket-little-box
+    position: relative
+    a
+      color: $accent
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 1rem
+      padding-left: 1.5rem
+      text-decoration: underline
+      &:hover
+        transition: all 3s ease-in
+        text-decoration: none
+      &:active
+        text-decoration: none
+        transition: all 3s ease-in
+      .number-little
+        position: absolute
+        top: 2rem
+        left: 5rem
+        font-size: 1.8rem
+        font-weight: bold
+        color: #ffffff
+  .logo-little-box
+    ul
+      padding: 0
+      margin: 0
+      list-style: none
+    li
+      display: block
+      color: $accent
+      font-family: "Arial", sans-serif
+      text-transform: uppercase
+      font-size: 0.8rem
+      font-weight: bold
+      margin-bottom: 0px
+      .dark
+        text-transform: none
+        font-size: 1.8rem
+        font-weight: bold
+        color: $dark-gray
+      .green
+        text-transform: none
+        color: $green
+        font-size: 1.8rem
+        font-weight: bold
+
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+  .top_pannel-content .basket-box
+    margin-right: 5rem
+
+
+
+  .feedback_in .feedback_invitation iframe
+    height: 26.5rem
+    width: 46rem
+  .footer .footer_callback
+    text-align: center
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+  .top_pannel-content .basket-box
+    margin-right: 5rem
+  nav ul li
+    margin-left: .2rem
+    &:first-child
+      margin-left: -1.3rem
+  nav ul li a
+    font-size: 1.2rem
+  .articles
+    background-size: 20% 25%
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+  .top_pannel-content .garant-box
+    text-align: center
+  .top_pannel-content .garant-box a
+    font-size: 1rem
+  .top_pannel-content .top-callback
+    text-align: right
+  nav ul li
+    margin-left: 1.5rem
+    &:first-child
+      margin-left: -1.3rem
+
+
+ 
+
+  .basket .btn
+    font-size: 1rem
+  .model h1
+    font-size: 2rem
+
+  .feedback_in .feedback_invitation iframe
+    height: 21.5rem
+    width: 36rem
+  .footer_top .information
+    margin-left: 6rem
+    margin-top: -2rem
+  .footer_top ul > li
+    margin-left: 2rem
+    a
+      font-size: 1.1rem
+  .footer_top .footer-social ul li
+    margin-right: 0
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+  .top_pannel-content .garant-box a
+    font-size: 1rem
+  nav ul li
+    margin-left: 4.5rem
+    &:first-child
+      margin-left: -1.3rem
+
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
+  .container
+    width: 96rem
+  nav ul li
+    margin-left: 4rem
+    &:first-child
+      margin-left: 0rem
+
+
