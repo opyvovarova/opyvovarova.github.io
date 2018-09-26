@@ -1,0 +1,126 @@
+.header{
+    height: 10.1rem;
+    background: $color-primary;
+    line-height: 10.1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+   
+
+    &__logo-box{ 
+        float: left;
+        
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        }
+
+    .navigation{
+        float: right;
+
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        &__list{
+            list-style: none;
+            }
+
+        &__item{
+            display: inline-block;
+            padding-left: 6.5rem;
+            
+            }
+
+        &__link{
+            position: relative;
+            &:link,
+            &:visited{
+                color: $color-white;
+                font-size: 1.4rem;
+                font-weight: 400;
+                font-family: inherit;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all 0.3s ease-in;
+                }
+            &:after{
+                display: block;
+                position: absolute;
+                bottom: -4.1rem;
+                content: "";
+                height: 2px;
+                width: 0%;
+                background-color: $color-secondary;
+                transition: width .3s ease-in-out;
+                }
+            &:hover:after,
+            &:active:after{
+                width: 100%;
+                }
+            
+            
+            
+          }
+        .active{
+            position: relative;
+            &:after{
+                display: block;
+                position: absolute;
+                bottom: -4.1rem;
+                content: "";
+                height: 2px;
+                width: 100%;
+                background-color: $color-secondary;
+                transition: width .3s ease-in-out;
+                }
+            }
+        
+            
+            
+           
+        }
+
+    @include clearfix;
+
+} 
+
+ .slicknav_menu{
+        display: none;
+        } 
+    
+    
+    @include respond (tab-port){
+        .navigation__list{
+            display: none;
+            }
+        .slicknav_menu{
+            display: block;
+            position: fixed;
+            background: transparent;
+            z-index: 1000;
+            right: 0rem;
+            }
+        .slicknav_btn{
+          background-color: $color-dark-gray;
+          border: .5rem;
+          &:hover{
+              background-color: $color-secondary;
+              opacity: .8rem;
+              }
+        
+
+        }
+        .slicknav_nav{
+            background: $color-dark-gray;
+           .navigation__link{
+                &:hover{
+                background: transparent;
+                color: $color-secondary;
+                border: none;
+                }
+               }
+            }
+
+    }

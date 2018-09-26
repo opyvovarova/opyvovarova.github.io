@@ -1,0 +1,151 @@
+.footer{
+
+    .footer__top{
+        background-color: $footer-primary;
+        padding-top: 9rem;
+        padding-bottom: 5rem;
+
+
+        p{
+            font-family: "Open-Sans", sans-serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: $color-dark-gray;
+            line-height: 2rem;
+            }
+        .footer_about--text{
+            .paragraph{
+                color: $color-dark-gray;
+                font-family: "Open Sans", sans-serif;
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                font-weight: 400;
+                }
+            }
+        .footer__contact{
+  
+            &--addres{
+                margin-bottom: 2rem;
+                }
+        }
+        .footer__newsletter{
+         
+            form.contact-form{
+                width: 30rem;
+                margin: 0 auto;
+                text-align: center;
+            }
+            fieldset{
+                border: none;
+                }
+            input:not([type=submit]),textarea
+            {
+                width: 30rem;
+                margin-bottom: 1rem;
+                color: #777;
+                background: transparent;
+                padding-left: 2rem;;
+                border: 1px solid $color-dark-gray;
+            }
+
+            input:not([type=submit])
+            {
+                height: 3.4rem;
+                line-height: 3.4rem;
+            }
+            .submit-button{
+                padding: 10px 30px;
+                color: $color-white;
+                text-transform: uppercase;
+                width: 30rem;
+                font-size: 1.4rem;
+                font-family: "Open-Sans", sans-serif;
+                background-color: $color-secondary;
+                border:none;
+                border-radius: .5rem;
+                &:hover{
+                    background-color: $color-secondary;
+                    opacity: .6;
+                    }
+                }
+
+            }
+
+        
+            }
+
+
+    .footer__bottom{
+        background-color: $color-primary;
+        padding: 2.5rem;
+        &--copyright{
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.2rem;
+            color: $color-dark-gray;
+            font-weight: 400;
+            }
+        .footer__link--list{
+            text-align: left;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+
+            }
+
+        @include respond(tab-port){
+            .footer__link--list{
+                margin-top: -4rem;
+                text-align: left;
+                justify-content: flex-start;
+
+
+            }
+        }
+
+        
+            
+            .footer__link--item{
+                margin-left: .5rem;
+                }
+             .footer__link--icon{
+                position: relative;
+                text-align: left;
+                background-color: transparent;
+                display: inline-block;
+                margin-left: .7rem;
+                border-radius: 50%;
+                border: 1px solid $color-dark-gray;
+                text-align: center;
+                width: 3.4rem;
+                height: 3.4rem;
+                line-height: 3.4rem;
+                font-size: 1.6rem;
+              
+
+                &:hover{
+                    background-color: $color-secondary;
+                    transform: rotate(360deg);
+                    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+                    transition: all 0.8s;
+                    }
+                }
+
+
+               
+
+            i{
+                line-height: 3.4rem;
+                text-align: center;
+                font-size: 1.6rem;
+                color: $color-dark-gray;
+                transition: all 0.8s;
+                &:hover{
+                    color: $color-white;
+
+                    }
+                }
+
+            }
+
+        }
+    
