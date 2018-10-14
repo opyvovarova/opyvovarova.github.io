@@ -1,0 +1,95 @@
+
+.slider-recipe{
+    .recipe__slider-description{
+        font-family: inherit;
+        font-size: 1.6rem;
+        color: $color-light-gray;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+
+    .recipe-slider__item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        margin: 1rem;
+        &:hover{
+            transition: 200ms ease;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+   .recipe__photo{
+       margin-right: 20px;
+   }
+
+    .recipe-slider__title{
+        font-family: "Comfortaa", cursive;
+        font-size: 2.4rem;
+        color: $color-primary;
+        font-weight: 400;
+
+        &:hover{
+            color: $color-secondary;
+            cursor: pointer;
+            transition: 200ms ease;
+            text-decoration: none;
+        }
+
+    }
+
+    .recipe-slider__descr{
+        $color: $color-black;
+        font-size: 1.6rem;
+        font-family: inherit;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .checked{
+        color: $color-secondary-yellow;
+    }
+
+    .recipe-slider__wrapper-slide .slick-prev, .recipe-slider__wrapper-slide .slick-next{
+        position: absolute;
+        display: block;
+        cursor: pointer;
+    }
+    
+    .recipe-slider__wrapper-slide .slick-prev{
+        left: -55px;
+    }
+    
+    .recipe-slider__wrapper-slide .slick-next{
+        right: -55px;
+    }
+    
+    .recipe-slider__wrapper-slide .slick-next:before{
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        right: 10px;
+        top: 7px;
+        background-image: url(../img/icons/css_sprites.png);
+        background-position: 247px -52px;
+        -moz-transform: rotate(-180deg); /* Для Firefox */
+        -ms-transform: rotate(-180deg); /* Для IE */
+        -webkit-transform: rotate(-180deg); /* Для Safari, Chrome, iOS */
+        -o-transform: rotate(-180deg); /* Для Opera */
+        transform: rotate(-180deg);
+    }
+    .recipe-slider__wrapper-slide .slick-prev:before{
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        left: 12px;
+        top: 10px;
+        background-image: url(../img/icons/css_sprites.png);
+        background-position: 247px -52px;
+    }
+
+}
