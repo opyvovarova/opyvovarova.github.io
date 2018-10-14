@@ -2,12 +2,119 @@ button{
   transition: 200ms ease;
   cursor: pointer;
   &:hover{
-    transform: scale(1.05);
     transition: 200ms ease;
 
   }
+}
+
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 6px;
+      transition: all .2s;
+      position: relative;
+      font-size: $default-font-size;
+      //Change for the <button> element
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-white;
+        box-shadow: 0 2px 10px rgba($color-dark-secondary, 0.6);
+        background-color: $color-dark-secondary;
+        border-radius: 6px;
+    }
+      &:active,
+      &:focus {
+          color: $color-white;
+          outline: none;
+          border-radius: 6px;
+          background-color: $color-dark-secondary-2;
+      }
+
+
+  }
+
+  &__orange{
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    box-shadow: 0 2px 10px rgba($color-secondary, 0.6);
+    background-color: $color-secondary;
+    color: $color-white;
+    font-weight: 700;
+
+}
+  &_orange-small {
+    padding: 1rem 3rem;
+    color: $color-white;
+    box-shadow: 0 2px 10px rgba($color-secondary, 0.6);
+    background-color: $color-secondary;
+}
+
+}
+.btn__center{
+  display: block;
+  margin: 0 auto;
+  
+}
+
+
+.heading__primary{
+  font-family: "Comfortaa", cursive;
+  color: $color-black;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 54px;
+}
+.heading__secondary{
+  font-family: "Comfortaa", cursive;
+  color: $color-black;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 40px;
+}
+.heading__tertiary{
+  font-family: inherit;
+  color: $color-primary;
+  font-size: 2rem;
+  font-weight: 400;
 }
 .clearfix{
   overflow: hidden;
   clear: both;
 }
+
+.pull-right{
+  float: right;
+}
+
+.pull-left{
+  float: left;
+}
+
+.u-center-text { text-align: center !important; }
+
+.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+.u-margin-bottom-medium {
+    margin-bottom: 6rem !important;
+
+    @include respond(tab-port) {
+        margin-bottom: 3rem !important;
+    }
+}
+
+.u-margin-bottom-big { 
+    margin-bottom: 10rem !important;
+
+    @include respond(tab-port) {
+        margin-bottom: 6rem !important;
+    }
+}
+.u-margin-top-small{ margin-top: 2rem !important;}
+.u-margin-top-medium{margin-top: 6rem !important;}
+.u-margin-top-big { margin-top: 8rem !important; }
+.u-margin-top-huge { margin-top: 10rem !important; }

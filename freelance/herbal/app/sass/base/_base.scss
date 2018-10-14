@@ -1,25 +1,53 @@
+@import "base/_mixins";
+@import "base/_variables";
+
 html{
     width: 100%;
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
 }
 body{
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
     border: 0;
     font-style: inherit;
     text-align: left;
+    overflow-x: hidden;
+    min-width: 320px;
+	position: relative;
     vertical-align: baseline;
 }
 
 a {
     text-decoration: none;
+    color: $color-primary;
+    transition: 200ms ease;
     &:hover, &:focus, &:active{
+        color: $color-secondary;
+        cursor: pointer;
+        transition: 200ms ease;
         text-decoration: none;
     }
 }
 
 input{
     outline: none;
+    border: 0;
+    background: none;
     &:hover, &:focus, &:active{
         outline: none;
     }
@@ -30,6 +58,11 @@ textarea{
     &:hover, &:focus, &:active{
         outline: none;
     }
+}
+
+li{
+    font-family: "Roboto",sans-serif;
+    list-style: none;
 }
 
 %clearfix {
