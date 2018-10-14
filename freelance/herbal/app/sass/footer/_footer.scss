@@ -1,0 +1,177 @@
+.footer{
+
+    .footer__information{
+        padding-top: 30px;
+        background-color: $color-primary-lignt-l;
+        width: 100%;
+
+        &-description{
+            font-size: 1.6rem;
+            margin-bottom: 3rem;
+            font-family: inherit;
+            font-weight: 400;
+            color: $color-black;
+        }
+
+        .icon__navigation-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            align-items: center;
+            border-radius: 6px;
+            border: 5px solid $color-primary-light;
+            text-align: center;
+            max-height: 50px;
+            padding: 0;
+            margin-right: 7rem;
+            .icon__navigation-item{
+                max-height: 50px;
+                padding: 0;
+                vertical-align: middle;
+                .icon__navigation-link{
+                    float: left;
+                    padding: 11px;
+                    border-right: 1px solid $color-primary-light;
+                }
+            }
+           
+        }
+
+        .footer__call{
+            position: relative;
+            .footer__call-number{
+                color: $color-black;
+                font-family: inherit;
+                font-size: 2.4rem;
+                font-weight: 400;
+                line-height: 3.6rem;
+            }
+
+            &:before{
+                position: absolute;
+                content: "";
+                right: 49%;
+                top: 0.5rem;
+                background-image: url(../img/icons/css_sprites.png);
+                height: 3rem;
+                width: 3rem;
+                background-position: 470px -15px;
+            }
+        }
+        
+        .footer__nav-right{
+            margin-right: 6rem;
+        }
+        .footer__navigation__list{
+            margin-left: -1rem;
+            .footer__navigation__item{
+                padding-top: 10px;
+                .footer__navigation__link{
+                    font-family: inherit;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 2.4rem;
+                    text-transform: uppercase;
+                    position: relative;
+
+                    &:after{
+                        position: absolute;
+                        content: "";
+                        left: -3rem;
+                        background-image: url(../img/icons/css_sprites.png);
+                        height: 18px;
+                        width: 12px;
+                        background-position: 246px -14px;
+    
+                    }
+                }
+            }
+        }
+    }
+    .footer__bottom{
+        width: 100%;
+        p{
+            font-family: inherit;
+            float: left;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            color: $color-black;
+            text-align: center;
+            width: 8%;
+        }
+        
+        .footer__navigation__list__icon-money{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            white-space:nowrap;
+        }
+    }
+
+    .footer__corporate{
+        background-color: $color-white;
+        width: 100%;
+        
+        .footer__corporate-wrap{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 60px;
+
+        }
+
+        .footer__corporate-left{
+            font-size: 1.6rem;
+            padding-right: 5rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            font-family: inherit;
+            color: $color-black;
+            
+        }
+
+        .footer__corporate-center{
+            font-size: 1.6rem;
+            color: $color-primary;
+            line-height: 2.4rem;
+            font-family: inherit;
+        }
+        .footer__corporate-right{
+            margin-left: auto;
+            font-size: 1.6rem;
+            font-family: inherit;
+            line-height: 2.4rem;
+            color: $color-black;
+            span{
+                color: $color-primary;
+            }
+        }
+
+        
+    }
+    .footer__logo{
+        margin-top: 2rem;
+        float: left;
+        margin-right: 2.5rem;
+    }
+    .footer__item-title{
+        color: $color-primary;
+        font-size: 2.2rem;
+        font-family: 'Comfortaa';
+        font-weight: 700;
+        line-height: 2.8rem;
+    }
+    .footer__item-description{
+        font-size: 1.6rem;
+        font-family: inherit;
+        font-weight: 400;
+        color: $color-gray-dark;
+        font-weight: 400;
+    }
+
+}
+
+
+
