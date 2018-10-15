@@ -1,17 +1,124 @@
-<!-- @@include ../html_open.html -->
+<!DOCTYPE html>
+<html lang="ru">
 
-<!-- @@include ../header.html -->
+<head>
+    <meta charset="utf-8">
+    <title>Список страниц | Лечебные травы</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+        html {
+            box-sizing: border-box;
+            height: 100%;
+            margin: 0;
+        }
 
-<!-- main container-->
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
 
-<!-- @@include ../top_slider.html -->
-<!-- @@include ../our_product.html -->
-<!-- @@include ../slider-recipe.html-->
-<!--  @@include ../our_blog.html  -->
+        .page {
+            min-width: 240px;
+            color: #84ad40;
+            font-size: 18px;
+            font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+            font-weight: normal;
+            line-height: 1.2;
+            background-color: #fff;
+            padding: 0;
+            margin: 0;
+        }
 
+        .page__in {
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
-<!-- close container-->
+        .page__title {
+            font-size: 26px;
+            padding: 0 0 20px;
+            border-bottom: 1px solid #999;
+            margin: 0 0 30px;
+        }
 
-<!-- @@include ../footer.html -->
+        .page__title-2 {
+            font-size: 20px;
+            margin: 0 0 20px;
+        }
 
-<!-- @@include ../html_close.html -->
+        .page__title-3 {
+            font-size: 18px;
+            font-weight: normal;
+            margin: 0 0 20px;
+        }
+
+        .page__text {
+            margin: 0 0 20px
+        }
+
+        .page__text--work {
+            opacity: .6
+        }
+
+        .page__text a {
+            color: #036;
+            text-decoration: underline;
+        }
+
+        .page__text a:hover {
+            color: #c00;
+            text-decoration: none;
+        }
+
+        .page__block {
+            padding-left: 20px;
+        }
+
+        .page__row {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .page__col {
+            flex: 1 1 100%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .page__col {
+                flex: 1 1 33.3%;
+            }
+        }
+    </style>
+</head>
+
+<body class="page">
+    <div class="page__in">
+        <h1 class="page__title">Проект "Лечебные травы"</h1>
+        <div class="page__row">
+            <div class="page__col">
+                <p class="page__text"><a href="home.html" target="_blank" class="page__link">Главная страница</a></p>
+                <h2 class="page__title-2">Каталог</h2>
+                <div class="page__block">
+                    <p class="page__text"><a href="category.html" target="_blank" class="page__link">Страница категории товаров</a></p>
+                    <p class="page__text"><a href="product.html" target="_blank" class="page__link">Страница товара</a></p>
+                    <p class="page__text"><a href="compare.html" target="_blank" class="page__link">Страница сравнения товаров</a></p>
+                     <p class="page__text"><a href="notification-admin.html" target="_blank" class="page__link">Уведомления в личном кабинете администратора</a></p>
+                     <p class="page__text"><a href="notification-seller.html" target="_blank" class="page__link">Уведомления в личном кабинете продавца</a></p>
+                     <p class="page__text"><a href="notification-user.html" target="_blank" class="page__link">Уведомления в личном кабинете покупателя</a></p>
+                     <p class="page__text"><a href="account-order.html" target="_blank" class="page__link">Заказ в личном кабинете</a></p>
+                </div>
+            </div>
+            <div class="page__col">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
