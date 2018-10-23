@@ -142,6 +142,7 @@ jQuery(document).ready(function($){
             }
         ]
     });
+    $('.recipe-slider__wrapper-slide').slick('unslick');
     /*close*/
 
     
