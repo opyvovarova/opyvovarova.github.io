@@ -30,38 +30,43 @@
 <!-- open .header-->
 <header class="header">
         <div class="header__items">
+            
              <div class="row">
-                     <div class="col-1-of-2">
-                         
-                         <a href="/" class="header__logo">
-                             <img src="img/logo.png" alt="logotype">
-                         </a>
-                         <div class="header__item-title">Лечебные травы</div> 
-                         <div class="header__item-title">Народные рецепты</div> 
-                         <div class="header__item-description">Домашний лечебник — народная медицин</div>
-                       
-                     </div>
-                     <div class="col-1-of-2">
-                          <ul class="pull-left header__phone">
-                              <li class="header__phone-number">+7(812)123-45-67</li>
-                              <li><a href="#" class="link-phone">Обратный звонок</a></li>
-                              <li class="header__phone-clock">С 9:00 до 20:00, ПН-СБ</li>  
-                          </ul>
-                         <ul class="pull-right header__location">
-                             <li сlass="header__location-title">Ваш регион:</li>
-                             <li><a href="#" class="link-location">Санк-Петербург и его область</a></li>
-                         </ul>
-          
-                     </div>
+                 
+                    <div class="header__items---wrap">
+                            <div class="col-1-of-2">
+                                    <div class="header__left">
+                                       <a href="/" class="header__logo">
+                                           <img src="img/logo.png" alt="logotype">
+                                       </a>
+                                       <div class="header__item-title">Лечебные травы</div> 
+                                       <div class="header__item-title">Народные рецепты</div> 
+                                       <div class="header__item-description">Домашний лечебник — народная медицин</div>
+                                     
+                                    </div>
+                                  
+                                </div>
+                                <div class="col-1-of-2">
+                                     <ul class="pull-left header__phone">
+                                         <li class="header__phone-number">+7(812)123-45-67</li>
+                                         <li><a href="#" class="link-phone">Обратный звонок</a></li>
+                                         <li class="header__phone-clock">С 9:00 до 20:00, ПН-СБ</li>  
+                                     </ul>
+                                    <ul class="pull-right header__location">
+                                        <li сlass="header__location-title">Ваш регион:</li>
+                                        <li><a href="#" class="link-location">Санк-Петербург и его область</a></li>
+                                    </ul>
+                     
+                                </div>
+                    </div>
+                 
                  </div>
         </div>
         <div class="container">
                 <nav class="header__navigation">
  
-                        <a href="#" id="mobile-menu" class="header__trigger">
-                            <span class=""></span>
-                        </a>
-            
+                       
+             
                         <ul class="navigation__list">
                             <li class="navigation__item"><a href="#" class="navigation__link">Каталог трав</a></li>
                             <li class="navigation__item"><a href="#" class="navigation__link">Каталог рецептов</a></li>
@@ -79,10 +84,16 @@
                    </nav>
             
         </div>
+
+       
         
         <div class="header__bottom">
             <div class="container">
                 <div class="header__bottom-wrap">
+
+                    <a href="#" id="mobile-menu" class="header__trigger" onclick="openNav()">
+                        <span class="trigger__icons">Меню</span>
+                    </a>
                         <form action="#" method="GET" class="header__search">
                                 <div class="header__search__field">
                                     <input class="header__search__input" type="text" name="search" placeholder="Начните вводить название травы или рецепта..."value="">
@@ -93,7 +104,7 @@
                             <div class="header__btns">
                                 <div class="header__btns-item">
                                     <span class="header__login-icon header__btns-link">
-                                           <a href="#"  class="login-link">Личный&nbsp;кабинет</a>
+                                           <a href="#popup__enter"  class="login-link">Личный&nbsp;кабинет</a>
                                     </span>
                                     
                                 </div>
@@ -124,37 +135,138 @@
 <section class="article">
         <div class="article__wrap">
             <div class="container">
-                    <div class="sidebar-categories__nav">
-                            <ul class="sidebar__naviation navigation__list-items ">
-                                <li class="navigation__entry  navigation__items has--sub-categories active-main ">
-                                    <a href="#" class="navigation__link-forward">Лечебные травы <br>и рецепты народной <br>медицины</a>
-                                    <ul class="sidebar__navigation-sub navigation__list-items">
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Болезни глаз</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Железы внутренней секреции</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Желудочно-кишечный тракт</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Женское здоровье</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Иммунитет</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Индивидуальные сборы и чам</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Кожа, волосы , ногти</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Лишний вес и похудение</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Мочеполовая система</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Мужское здоровье</a></li>
-                                        <li class="navigation__entry-sub "><a href="#" class="navigation__link-sub">Нервная система</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Печень</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Позвоночник и суставы</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Простуда(ОРЗ,ОРВИ)</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Сердечно-сосудистые проблемы</a></li>
-                                        <li class="navigation__entry-sub"><a href="#" class="navigation__link-sub">Эндокринная система</a></li>
-            
-                                    </ul>
-                                </li>
-                                <li class="navigation__entry  navigation__items has--sub-categories"><a href="#" class="navigation__link-sidebar">Травы<br> и народные рецепты<br> по действию</a></li>
-                                <li class="navigation__entry navigation__items has--sub-categories"><a href="#" class="navigation__link-sidebar">Травы <br>по алфавиту</a></li>
-                                <li class="navigation__entry navigation__items has--sub-categories"><a href="#" class="navigation__link-sidebar">Рецепты народной мидицины по заболеванию</a></li>
-            
-            
-                            </ul>
+                <div class="sidebar-categories-wrap">
+                        <div class="sidebar-categories__nav">
+                                <ul id="accordion" class="sidebar__items">
+                                        <li class="sidebar__navigation-item">
+                                                <div class="sidebar__navigation-link">Лечебные травы<br>и рецепты народной <br>медицины</div>
+                                                <ul class="navigation-sublist">
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Болезни глаз</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Железы внутренней секреции</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Желудочно-кишечный тракт</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Женское здоровье</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Иммунитет</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Индивидуальные сборы и чаu</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Кожа, волосы , ногти</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Лишний вес и похудение</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Мочеполовая система</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Нервная система</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Печень</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Позвоночник и суставы</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Простуда(ОРЗ,ОРВИ)</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Сердечно-сосудистые проблемы</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Эндокринная система</a></li>
+                                                </ul>
+                                            </li>
+                                        <li class="sidebar__navigation-item">
+                                                <div class="sidebar__navigation-link">Травы<br> и народные рецепты<br> по действию</div>
+                                                <ul class="navigation-sublist">
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Болезни глаз</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Железы внутренней секреции</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Желудочно-кишечный тракт</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Женское здоровье</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Иммунитет</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Индивидуальные сборы и чаu</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Кожа, волосы , ногти</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Лишний вес и похудение</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Мочеполовая система</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Нервная система</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Печень</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Позвоночник и суставы</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Простуда(ОРЗ,ОРВИ)</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Сердечно-сосудистые проблемы</a></li>
+                                                    <li class="navigation-subitem"><a href="#" class="navigation-sublink">Эндокринная система</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sidebar__navigation-item">
+                                                    <div class="sidebar__navigation-link">Травы <br>по алфавиту</div>
+                                                    <ul class="navigation-sublist">
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Болезни глаз</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Железы внутренней секреции</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Желудочно-кишечный тракт</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Женское здоровье</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Иммунитет</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Индивидуальные сборы и чаu</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Кожа, волосы , ногти</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Лишний вес и похудение</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Мочеполовая система</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Нервная система</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Печень</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Позвоночник и суставы</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Простуда(ОРЗ,ОРВИ)</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Сердечно-сосудистые проблемы</a></li>
+                                                        <li class="navigation-subitem"><a href="#" class="navigation-sublink">Эндокринная система</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sidebar__navigation-item">
+                                                        <div class="sidebar__navigation-link">Лечебные травы<br>и рецепты народной <br>медицины</div>
+                                                        <ul class="navigation-sublist">
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Болезни глаз</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Железы внутренней секреции</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Желудочно-кишечный тракт</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Женское здоровье</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Иммунитет</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Индивидуальные сборы и чаu</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Кожа, волосы , ногти</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Лишний вес и похудение</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Мочеполовая система</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Нервная система</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Печень</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Позвоночник и суставы</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Простуда(ОРЗ,ОРВИ)</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Сердечно-сосудистые проблемы</a></li>
+                                                            <li class="navigation-subitem"><a href="#" class="navigation-sublink">Эндокринная система</a></li>
+                                                        </ul>
+                                                    </li>
+                                </ul>
+        
                         </div>
+                        <div class="sidebar-categories__nav">
+                            <div class="form_wrap-checkout sidebar__items">
+                                    <h2 class="heading__tertiary">Поиск по параметрам</h2>
+
+                                    <form action="/" method="post">
+                                        <div class="form__group">
+                                                <div class="field-wrap">
+                                                        <select name="sources" id="sources" class="custom-select sources" placeholder="Категория">
+                                                                <option value="option1">opton1</option>
+                                                                <option value="option2">option2</option>
+                                                                <option value="option3">option3</option>
+                                                              </select>
+                                                </div>
+                                                <div class="field-wrap">
+                                                        <select name="sources" id="sources" class="custom-select sources" placeholder="Кол-во&nbsp;компонентов">
+                                                                <option value="option1">opton1</option>
+                                                                <option value="option2">option2</option>
+                                                                <option value="option3">option3</option>
+                                                              </select>
+                                                </div>
+                                                <div class="field-wrap">
+                                                        <select name="sources" id="sources" class="custom-select sources" placeholder="Рейтинг">
+                                                                <option value="option1">opton1</option>
+                                                                <option value="option2">option2</option>
+                                                                <option value="option3">option3</option>
+                                                              </select>
+                                                </div>
+                                                <p class="text-gray">Цена</p>
+                                                <div class="field-wrap">
+                                                        <input class="price_range" id="price_range" name="number" value="" type="number" placeholder="от">
+                                                        <input class="price_range" id="price_range" name="number" value="" type="number"  placeholder="до">
+
+                                                </div>
+
+                                                <a href="#" class="btn btn_orange-small">  Подобрать травы <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                </a>
+
+
+                                        </div>
+                                      
+                                    </form>
+                            </div>
+        
+                        </div>
+                </div>
+                   
                     <div class="catalog-content u-margin-bottom-medium">
                             <ul class="breadcrumbs__pages u-margin-bottom-medium">
                                     <li><a href="#">Главная</a></li>
@@ -235,6 +347,7 @@
 <!-- close container-->
 
 <!-- start footer.html-->
+<a href="#" class="scrollToTop"></a>
 <footer class="footer">
         <div class="footer__information">
             <div class="row">
@@ -253,7 +366,7 @@
                             нанести серьезный вред здоровью.
                     </div>  
 
-                    <ul class="icon__navigation-list pull-left">
+                    <!-- <ul class="icon__navigation-list pull-left">
                         <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_vk.png" alt="Photo"></a></li>
                         <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_ok.png" alt="Photo"></a></li>
                         <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_fb.png" alt="Photo"></a></li>
@@ -265,7 +378,7 @@
                         <li class="footer__call-title">Остались вопросы?Звоните:</li>
                         <li class="footer__call-number">+7(812)123-45-67</li>
                         <li>С 9:00 до 20:00, ПН-СБ</li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col-2-of-4">
                     <div class="footer__nav-left pull-left">
@@ -291,6 +404,21 @@
                         </div>
                     
                 </div>
+            </div>
+            <div class="footer__middle">
+                    <ul class="icon__navigation-list pull-left">
+                            <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_vk.png" alt="Photo"></a></li>
+                            <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_ok.png" alt="Photo"></a></li>
+                            <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_fb.png" alt="Photo"></a></li>
+                            <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_telegram.png" alt="Photo"></a></li>
+                            <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_instagram.png" alt="Photo"></a></li>
+    
+                        </ul>
+                        <ul class="footer__call">
+                            <li class="footer__call-title">Остались вопросы?Звоните:</li>
+                            <li class="footer__call-number">+7(812)123-45-67</li>
+                            <li>С 9:00 до 20:00, ПН-СБ</li>
+                        </ul>
             </div>
 
             <div class="footer__bottom">
@@ -326,6 +454,95 @@
             </div>
         </div>
 </footer>
+
+<a  href="#our__product" class="popup" id="popup__registr"></a>
+        <div class="popup__content">
+                <div class="form_wrap-checkout">
+                        <form action="#" class="form">
+                        
+                            <h2 class="heading__secondary">Регистрация</h2>
+                            <a href="#our__product" class="popup__close">&times;</a>
+            
+                            <div class="field-wrap">
+                                <label>
+                                    <span class="req">*</span>
+                                </label>
+                                <input type="email"  placeholder="E-mail" required/>
+                            </div>
+                            <div class="field-wrap">
+                                <label>
+                                    <span class="req">*</span>
+                                </label>
+                                <input type="password"  placeholder="Пароль" required/>
+                            </div>
+                            <div class="field-wrap">
+                                <label>
+                                    <span class="req">*</span>
+                                </label>
+                                <input type="password"  placeholder="Повторите пароль" required/>
+                            </div>
+                                
+                            <p><a href="#popup__enter" class="link__back">Вернуться ко входу</a><p>
+                            <p><a  href ="#" class="btn btn__orange">Зарегистрироваться</a></p>
+                        </form>
+                                
+            </div>
+    </div>
+
+<!--  Popup window enter account  -->
+<a  href="#our__product" class="popup" id="popup__enter"></a>
+    <div class="popup__content">
+                <div class="form_wrap-checkout">
+                        <form action="#" class="form">
+                        
+                            <h2 class="heading__secondary">Вход в личный <br>кабинет</h2>
+                            <a href="#our__product" class="popup__close">&times;</a>
+            
+                            <div class="field-wrap">
+                                <label>
+                                    <span class="req">*</span>
+                                </label>
+                                <input type="email"  placeholder="E-mail" required/>
+                            </div>
+                            <div class="field-wrap">
+                                <label>
+                                    <span class="req">*</span>
+                                </label>
+                                <input type="password"  placeholder="Пароль" required/>
+                            </div>
+                            <p><a href="#popup__recovery" class="forgot_btn">Забыл(а)пароль</a></p>
+                            
+                                
+                            <div class="u-margin-top-medium">Нет аккаунта?<a href="#popup__registr" class="link__back">Зарегистрируйтесь!</a><p>
+                            <p><a  href ="#" class="btn btn__orange">Войти</a></p>
+                        </form>
+                                
+            </div>
+    </div>
+
+    <a  href="#our__product" class="popup" id="popup__recovery"></a>
+    <div class="popup__content">
+                <div class="form_wrap-checkout">
+                        <form action="#" class="form">
+                        
+                            <h2 class="heading__secondary">Восстановление <br>пароля</h2>
+                            <a href="#our__product" class="popup__close">&times;</a>
+                            <p class="text-gray">Введите адрес электронной почты, мы отправим пароль туда</p>
+                            <div class="field-wrap">
+                                <label>
+                                    <span class="req">*</span>
+                                </label>
+                                <input type="email"  placeholder="E-mail" required/>
+                            </div>
+                            <p><a href="#popup__enter" class="link__back">Вернуться ко входу</a><p>
+                            <p><a  href ="#" class="btn btn__orange">Зарегистрироваться</a></p>
+                        </form>
+                                
+            </div>
+    </div>
+
+
+
 <!-- end footer.html-->
 
 <!-- start html_close.html-->
