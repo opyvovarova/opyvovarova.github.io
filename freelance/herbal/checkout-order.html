@@ -42,15 +42,10 @@
                        
                      </div>
                      <div class="col-1-of-2">
-                          <ul class="pull-left header__phone">
-                              <li class="header__phone-number">+7(812)123-45-67</li>
-                              <li><a href="#" class="link-phone">Обратный звонок</a></li>
-                              <li class="header__phone-clock">С 9:00 до 20:00, ПН-СБ</li>  
+                          <ul class="pull-left-block header__clock">
+                                <li class="header__phone-description">Время работы</li>
+                                <li class="header__phone-clock">С 9:00 до 20:00, ПН-СБ</li>  
                           </ul>
-                         <ul class="pull-right header__location">
-                             <li сlass="header__location-title">Ваш регион:</li>
-                             <li><a href="#" class="link-location">Санк-Петербург и его область</a></li>
-                         </ul>
           
                      </div>
                  </div>
@@ -65,219 +60,237 @@
 
 <!-- start checkout-content.html-->
 <section class="checkout-section u-margin-bottom-medium">
-        <div class="container">
-                <ul class="breadcrumbs__pages ">
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Мой кабинет</a></li>
-                        <li><a href="#">Корзина</a></li>
-                        <li><a href="#">Оформление заказа</a></li>
+    <div class="container">
+        <ul class="breadcrumbs__pages ">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Мой кабинет</a></li>
+            <li><a href="#">Корзина</a></li>
+            <li><a href="#">Оформление заказа</a></li>
 
-                    </ul>
-                <h1 class="heading__primary">Оформление заказа</h1>
-                <a class="back_product" href="#">Вернуться к покупкам</a>
+        </ul>
+        <h1 class="heading__primary">Оформление заказа</h1>
+        <a class="back_product" href="#">Вернуться к покупкам</a>
 
-            <div class="form_wrap-checkout u-margin-bottom-medium">
-                <form action="/" method="post">
+        <div class="form_wrap-checkout u-margin-bottom-medium">
+            <form action="/" method="post">
 
                 <div class="row">
                     <div class="col-1-of-2">
                         <div class="form__item-left">
-                                <div class="form__group">
-                                        <div class="number__list">
-                                            <h2 class="heading__secondary">Информация о покупателе</h2>
-                                            <div class="top-row">
-                                                    <div class="field-wrap">
-                                                      <label>
-                                                        <span class="req">*</span>
-                                                      </label>
-                                                      <input type="text" required placeholder="ФИО"/>
-                                                    </div>
-                                                
-                                                    <div class="field-wrap">
-                                                      <label>
-                                                        <span class="req">*</span>
-                                                      </label>
-                                                      <input type="tel" required placeholder="Телефон"/>
-                                                      <label>
-                                                            <span class="req">*</span>
-                                                          </label>
-                                                        <input type="email"required placeholder="Электронная почта" />
-                                                    </div>
-                                                    <div class="field-wrap">
-                                                            <select name="sources" id="sources" class="custom-select sources" placeholder="Выберите регион доставки">
-                                                                    <option value="option1">opton1</option>
-                                                                    <option value="option2">option2</option>
-                                                                    <option value="option3">option3</option>
-                                                                  </select>
-                                                    </div>
+                            <div class="form__group">
+                                <div class="number__list">
+                                    <h2 class="heading__secondary">Информация о покупателе</h2>
+                                    <div class="top-row">
+                                        <div class="field-wrap">
+                                            <label>
+                                                <span class="req">*</span>
+                                            </label>
+                                            <input type="text" required placeholder="ФИО" />
+                                        </div>
 
-                                                    <div class="field-wrap">
-                                                            <label>
-                                                              <span class="req">*</span>
-                                                            </label>
-                                                            <input type="text"required placeholder="Город доставки"/>
-                                                    </div>
-                                            </div>
+                                        <div class="field-wrap">
+                                            <label>
+                                                <span class="req">*</span>
+                                            </label>
+                                            <input type="tel" required placeholder="Телефон" />
+                                            <label>
+                                                <span class="req">*</span>
+                                            </label>
+                                            <input type="email" required placeholder="Электронная почта" />
                                         </div>
-                                </div>
-                                <div class="form__group">
-                                        <div class="number__list">
-                                            <h2 class="heading__secondary">Способ доставки</h2>
-                                            <div class="field-wrap">
-                                                    <select name="sources" id="sources" class="custom-select sources" placeholder="Выберите cпособ доставки">
-                                                            <option value="option1">opton1</option>
-                                                            <option value="option2">option2</option>
-                                                            <option value="option3">option3</option>
-                                                          </select>
-                                            </div>
+                                        <div class="field-wrap">
+                                            <select name="sources" id="sources" class="custom-select sources"
+                                                placeholder="Выберите регион доставки">
+                                                <option value="option1">opton1</option>
+                                                <option value="option2">option2</option>
+                                                <option value="option3">option3</option>
+                                            </select>
                                         </div>
-                                </div>
-                                <div class="form__group">
-                                        <div class="number__list">
-                                            <h2 class="heading__secondary">Способ оплаты</h2>
-                                            <div class="field-wrap">
-                                                    <select name="sources" id="sources" class="custom-select sources" placeholder="Выберите cпособ оплаты">
-                                                            <option value="option1">opton1</option>
-                                                            <option value="option2">option2</option>
-                                                            <option value="option3">option3</option>
-                                                          </select>
-                                            </div>
+
+                                        <div class="field-wrap">
+                                            <label>
+                                                <span class="req">*</span>
+                                            </label>
+                                            <input type="text" required placeholder="Город доставки" />
                                         </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="form__group">
+                                <div class="number__list">
+                                    <h2 class="heading__secondary">Способ доставки</h2>
+                                    <div class="field-wrap">
+                                        <select name="sources" id="sources" class="custom-select sources" placeholder="Выберите cпособ доставки">
+                                            <option value="option1">opton1</option>
+                                            <option value="option2">option2</option>
+                                            <option value="option3">option3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <div class="number__list">
+                                    <h2 class="heading__secondary">Способ оплаты</h2>
+                                    <div class="field-wrap">
+                                        <select name="sources" id="sources" class="custom-select sources" placeholder="Выберите cпособ оплаты">
+                                            <option value="option1">opton1</option>
+                                            <option value="option2">option2</option>
+                                            <option value="option3">option3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                                
-                                                    
+
+
                     </div>
                     <div class="col-1-of-2">
                         <div class="form__group">
                             <div class="number__list">
-                               <h2 class="heading__secondary">Cостав заказа</h2>
+                                <h2 class="heading__secondary">Cостав заказа</h2>
                             </div>
                             <div class="shopping__cart-overflow u-margin-bottom-small">
-                                    <div class="shopping-cart-checkout">
-                                        <div class="product">
-                                             
-                                              <div class="product-details">
-                                                <div class="product-image">
-                                                    <img src="img/product/1.png" alt="Photo">
-                                          
-                                                </div>
-                                                <h2 class="heading__secondary"><a class="product-title">Агарикус гриб</a></h2>
-                                              </div>
-                                              <div class="product-quantity">
-                                                  <div class="count__quantity">
-                                                      12
-                                                  </div>
-                                              </div>
-                                              <div class="product-line-price"><p class="total_price">90&nbsp;000<span class="rubl">&#8399;</span></p></div>
-                                             
-                                              
+                                <div class="shopping-cart-checkout">
+                                    <div class="product">
+
+                                        <div class="product-details">
+                                            <div class="product-image">
+                                                <img src="img/product/1.png" alt="Photo">
+
+                                            </div>
+                                            <h2 class="heading__secondary"><a class="product-title">Агарикус гриб</a></h2>
                                         </div>
-                                        <div class="product">
-                                             
-                                                <div class="product-details">
-                                                  <div class="product-image">
-                                                      <img src="img/product/1.png" alt="Photo">
-                                            
-                                                  </div>
-                                                  <h2 class="heading__secondary"><a class="product-title">Агарикус гриб</a></h2>
-                                                </div>
-                                                <div class="product-quantity">
-                                                    <div class="count__quantity">
-                                                        12
-                                                    </div>
-                                                </div>
-                                                <div class="product-line-price"><p class="total_price">90&nbsp;000<span class="rubl">&#8399;</span></p></div>
-                                               
-                                                
-                                          </div>
-                                          <div class="product">
-                                             
-                                                <div class="product-details">
-                                                  <div class="product-image">
-                                                      <img src="img/product/1.png" alt="Photo">
-                                            
-                                                  </div>
-                                                  <h2 class="heading__secondary"><a class="product-title">Агарикус гриб</a></h2>
-                                                </div>
-                                                <div class="product-quantity">
-                                                    <div class="count__quantity">
-                                                        12
-                                                    </div>
-                                                </div>
-                                                <div class="product-line-price"><p class="total_price">90&nbsp;000<span class="rubl">&#8399;</span></p></div>
-                                               
-                                                
-                                          </div>
-                                          <div class="product">
-                                             
-                                                <div class="product-details">
-                                                  <div class="product-image">
-                                                      <img src="img/product/1.png" alt="Photo">
-                                            
-                                                  </div>
-                                                  <h2 class="heading__secondary"><a class="product-title">Агарикус гриб</a></h2>
-                                                </div>
-                                                <div class="product-quantity">
-                                                    <div class="count__quantity">
-                                                        12
-                                                    </div>
-                                                </div>
-                                                <div class="product-line-price"><p class="total_price">90&nbsp;000<span class="rubl">&#8399;</span></p></div>
-                                               
-                                                
-                                          </div>
-                                          
-                                    </div>
+                                        <div class="product-quantity">
+                                            <div class="count__quantity">
+                                                12
+                                            </div>
+                                        </div>
+                                        <div class="product-line-price">
+                                            <p class="total_price">90&nbsp;000<span class="rubl"><i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span></p>
+                                        </div>
 
-
-                                        
-                             </div>
-
-                             <div class="totals">
-                                           
-                                    <div class="totals-item">
-                                      <p class="descr__sub">Ваша скидка: <span class="totals-value-sub">5%</span></p>
-                                      <p class="descr__sub"> Стоимость доставки:<span class="totals-value-discount">450<span class="rubl">&#8399;</span></span></p>
 
                                     </div>
-                                    <div class="totals-item">
-                                            <label>Итого(с учетом доставки и скидки):&nbsp;</label>
-                                            <div class="totals-value" id="cart-subtotal">99&nbsp;600<span class="rubl">&#8399;</span></div>
-                                          </div>
-                                  </div>
-                                  <div class="field-wrap-right u-margin-bottom-small-x">
-                                        <h2 class="heading__secondary">Комментарий к заказу</h2>
+                                    <div class="product">
 
-                                        <p><textarea  cols="85" name="text" placeholder="Текст комментария"></textarea></p>
+                                        <div class="product-details">
+                                            <div class="product-image">
+                                                <img src="img/product/1.png" alt="Photo">
+
+                                            </div>
+                                            <h2 class="heading__secondary"><a class="product-title">Агарикус гриб</a></h2>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <div class="count__quantity">
+                                                12
+                                            </div>
+                                        </div>
+                                        <div class="product-line-price">
+                                            <p class="total_price">90&nbsp;000<span class="rubl"><i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span></p>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="product">
+
+                                        <div class="product-details">
+                                            <div class="product-image">
+                                                <img src="img/product/1.png" alt="Photo">
+
+                                            </div>
+                                            <h2 class="heading__secondary"><a class="product-title">Агарикус гриб</a></h2>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <div class="count__quantity">
+                                                12
+                                            </div>
+                                        </div>
+                                        <div class="product-line-price">
+                                            <p class="total_price">90&nbsp;000<span class="rubl"><i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span></p>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="product">
+
+                                        <div class="product-details">
+                                            <div class="product-image">
+                                                <img src="img/product/1.png" alt="Photo">
+
+                                            </div>
+                                            <h2 class="heading__secondary"><a class="product-title">Агарикус гриб</a></h2>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <div class="count__quantity">
+                                                12
+                                            </div>
+                                        </div>
+                                        <div class="product-line-price">
+                                            <p class="total_price">90&nbsp;000<span class="rubl"><i class="fa fa-rub"
+                                                        aria-hidden="true"></i></span></p>
+                                        </div>
+
+
+                                    </div>
 
                                 </div>
-                                <ul class="unstyled">
-                                        <li>
-                                          <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" checked>
-                                          <label for="styled-checkbox-1">Хочу получать письма об акциях и скидках</label>
-                                        </li>
-                                        <li>
-                                          <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2" checked>
-                                          <label for="styled-checkbox-2">Нажимая кнопку «Заказать», я принимаю условия продажи товаров
-                                                и даю согласие на обработку персональных данныхy</label>
-                                        </li>
-                                        
-                                       
-                                      </ul>
-                                      <a  href ="#" class="btn btn__orange">Заказать</a>
+
+
+
+                            </div>
+
+                            <div class="totals">
+
+                                <div class="totals-item">
+                                    <p class="descr__sub">Ваша скидка: <span class="totals-value-sub">5%</span></p>
+                                    <p class="descr__sub"> Стоимость доставки:<span class="totals-value-discount">450<span
+                                                class="rubl"><i class="fa fa-rub" aria-hidden="true"></i></span></span></p>
+
+                                </div>
+                                <div class="totals-item">
+                                    <label>Итого(с учетом доставки и скидки):&nbsp;</label>
+                                    <div class="totals-value" id="cart-subtotal">99&nbsp;600<span class="rubl"><i class="fa fa-rub"
+                                                aria-hidden="true"></i></span></div>
+                                </div>
+                            </div>
+                            <div class="field-wrap-right u-margin-bottom-small-x">
+                                <h2 class="heading__secondary">Комментарий к заказу</h2>
+
+                                <p><textarea cols="85" name="text" placeholder="Текст комментария"></textarea></p>
+
+                            </div>
+                            <ul class="unstyled">
+                                <li>
+                                    <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1"
+                                        checked>
+                                    <label for="styled-checkbox-1">Хочу получать письма об акциях и скидках</label>
+                                </li>
+                                <li>
+                                    <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2"
+                                        checked>
+                                    <label for="styled-checkbox-2">Нажимая кнопку «Заказать», я принимаю условия
+                                        продажи товаров
+                                        и даю согласие на обработку персональных данныхy</label>
+                                </li>
+
+
+                            </ul>
+                            <a href="#" class="btn btn__orange">Заказать</a>
                         </div>
-                               
-                        </div>
+
                     </div>
                 </div>
-                <div class="phone__quest u-margin-top-small">
-                        <p>Есть вопросы? Всегда можно просто позвонить: <span class="green-text">+7 (812) 123-45-67</span></p>
-                </div>
+        </div>
+        <div class="phone__quest u-margin-top-small">
+            <p>Есть вопросы? Всегда можно просто позвонить: <span class="green-text">+7 (812) 123-45-67</span></p>
+        </div>
 
-            </div>
-       
-    
+    </div>
+
+
     </div>
 </section>
 <!-- end checkout-content.html-->
@@ -287,22 +300,22 @@
 
 <!-- start footer_account.html-->
 <footer class="footer">
-        <div class="footer__corporate primary__light">
-            <div class="row">
-                <div class="footer__corporate-wrap">
-                    <div class="footer__corporate-left">
-                         © Лечебные травы, 2018. Все права защищены
-                    </div>
-                    <div class="footer__corporate-center">
-                        Политика конфиденциальности
-                    </div>
-                    <div class="footer__corporate-right">
-                        <p>Дизайн — <span>Александр Льдов   </span></p>
-                    </div>
+    <div class="footer__corporate primary__light">
+        <div class="row">
+            <div class="footer__corporate-wrap">
+                <div class="footer__corporate-left">
+                    © Лечебные травы, 2018. Все права защищены
                 </div>
-                
+                <div class="footer__corporate-center">
+                    Политика конфиденциальности
+                </div>
+                <div class="footer__corporate-right">
+                    <p>Дизайн — <span>Александр Льдов </span></p>
+                </div>
             </div>
+
         </div>
+    </div>
 </footer>
 <!-- end footer_account.html-->
 
