@@ -29,44 +29,35 @@
 <!-- start header.html-->
 <!-- open .header-->
 <header class="header">
-    <div class="header__items">
-
-        <div class="row">
-
-            <div class="header__items---wrap">
-                <div class="col-1-of-2">
-                    <div class="header__left">
-                        <a href="/" class="header__logo">
-                            <img alt="Photo 1" class="loho__img" src="img/logo.png">
-                        </a>
-                        <div class="header__item-title">Лечебные травы</div>
-                        <div class="header__item-title">Народные рецепты</div>
-                        <div class="header__item-description">Домашний лечебник — народная медицин</div>
-
-                    </div>
-
+    <div class="container">
+        <div class="header__items">
+            <div class="header__left">
+                <a href="/" class="header__logo">
+                    <img alt="Photo 1" class="loho__img" src="img/logo.png">
+                </a>
+                <div class="logo__description">
+                    <div class="header__item-title">Лечебные травы</div>
+                    <div class="header__item-title">Народные рецепты</div>
+                    <div class="header__item-description">Домашний лечебник — народная медицин</div>
                 </div>
-                <div class="col-1-of-2">
-                    <ul class="pull-left-block header__phone">
-                        <li class="header__phone-number">+7(812)123-45-67</li>
-                        <li><a href="#" class="link-phone">Обратный звонок</a></li>
-                        <li class="header__phone-clock">С 9:00 до 20:00, ПН-СБ</li>
-                    </ul>
-                    <ul class="pull-right-block header__location">
-                        <li сlass="header__location-title">Ваш регион:</li>
-                        <li><a href="#" class="link-location">Санк-Петербург и его область</a></li>
-                    </ul>
 
-                </div>
+            </div>
+            <div class="header__right">
+                <ul class="header__phone">
+                    <li class="header__phone-number"><span class="icon__phone"><img src="img/icons/icon_phone.png" alt=""></span>+7(812)123-45-67</li>
+                    <li><a href="#" class="link-phone">Обратный звонок</a></li>
+                    <li class="header__phone-clock"><span class="img__clock"><img src="img/icons/icon_clock_mini.png"
+                                alt=""></span>С 9:00 до 20:00, ПН-СБ</li>
+                </ul>
+                <ul class="header__location">
+                    <li сlass="header__location-title"><span class="icon__map"><img src="../img/icons/icon_map.png" alt=""></span>Ваш
+                        регион:</li>
+                    <li><a href="#" class="link-location">Санк-Петербург и его область</a></li>
+                </ul>
             </div>
 
         </div>
-    </div>
-    <div class="container">
         <nav class="header__navigation">
-
-
-
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#" class="navigation__link">Каталог трав</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Каталог рецептов</a></li>
@@ -75,27 +66,18 @@
                 <li class="navigation__item"><a href="#" class="navigation__link">Статьи</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Онлайн-курсы</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
-
-
-
             </ul>
-
-
         </nav>
-
-    </div>
-
-
-
-    <div class="header__bottom">
-        <div class="container">
+        <div class="header__bottom">
             <div class="header__bottom-wrap">
+                <a href="#" class="header__trigger " id="mobile-menu"><img src="img/icons/icon_menu.png" alt="Icon Menu">
+                    Меню</a>
+                <div class="header__bottom-menu">
+                    <a href="#" class="close-btn_new" id="CloseMenuBtn">&times;<span class="text__mnu">Меню</span></a>
+                    <div class="header__bottom-menu__content">
+                    </div>
+                </div>
 
-
-
-                <a href="#" id="mobile-menu" class="header__trigger">
-                     <span class="trigger__icons"><img src="img/icons/icon_menu.png"></span>Меню
-                </a>
                 <form action="#" method="GET" class="header__search">
                     <div class="header__search__field">
                         <input class="header__search__input" type="text" name="search" placeholder="Начните вводить название травы или рецепта..."
@@ -103,29 +85,23 @@
                         <input class="header__search__input-submit" type="submit" value="">
                     </div>
                 </form>
-
                 <div class="header__btns">
                     <div class="header__btns-item">
                         <span class="header__login-icon header__btns-link">
                             <a href="#popup__enter" class="login-link">Личный&nbsp;кабинет</a>
                         </span>
-
                     </div>
                     <div class="header__btns-item">
                         <a href="#" class="header__basket-icon header__btns-link"></a>
 
                         <p><span class="header__btns__link header__btns__desc-cart">Товаров&nbsp;нет</span><br>
-                            <span class="header__btns__link  header__btns-count">0 руб</span></p>
+                            <span class="header__btns__link  header__btns-count">0 </span>руб</p>
+                            <span class="header__quantity">0</span>
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
     </div>
-
 
 </header>
 <!-- close .header -->
@@ -134,7 +110,7 @@
 <!-- main container-->
 
 <!-- start catalog-content.html-->
-<section class="catalog-content u-margin-bottom-medium">
+<section class="catalog-content">
         <div class="container">
                 <div class="sidebar-categories-wrap">
                         <div class="sidebar-categories__nav">
@@ -328,7 +304,7 @@
 
                         <div class="search__parametes">Тип травы и поиск по параметрам <span class="arrow_btn">&#62;</span></div>
 
-                        <ul class="breadcrumbs__pages u-margin-bottom-medium">
+                        <ul class="breadcrumbs__pages">
                                 <li><a href="#">Главная</a></li>
                                 <li><a href="#">Травы по заболеванию</a></li>
                                 <li><a href="#">Нервная система</a></li>
@@ -352,8 +328,7 @@
 
                         <div class="our__product__items">
                                 <div class="our__product__item">
-                                        <div class="row">
-                                                <div class="col-1-of-3">
+                                                <div class="content__left">
                                                         <div class="one__product-photo">
                                                                 <img src="img/product/1.png" alt="Photo">
                                                                 <div class="lider-photo"></div>
@@ -366,7 +341,7 @@
                                                                 <li class="btn__ecology-4"></li>
                                                         </ul>
                                                 </div>
-                                                <div class="col-2-of-3">
+                                                <div class="content__right">
                                                         <div class="right__content-wrap">
                                                                 <h2 class="heading__secondary"><a href="#">Агарикус
                                                                                 гриб</a></h2>
@@ -558,12 +533,10 @@
 
 
                                                 </div>
-                                        </div>
                                 </div>
 
                                 <div class="our__product__item">
-                                        <div class="row">
-                                                <div class="col-1-of-3">
+                                                <div class="content__left">
                                                         <div class="one__product-photo">
                                                                 <img src="img/product/1.png" alt="Photo">
                                                                 <div class="lider-photo"></div>
@@ -575,7 +548,7 @@
                                                                 <li class="btn__ecology-7"></li>
                                                         </ul>
                                                 </div>
-                                                <div class="col-2-of-3">
+                                                <div class="content__right">
                                                         <div class="right__content-wrap">
                                                                 <h2 class="heading__secondary"><a href="#">Агарикус
                                                                                 гриб</a></h2>
@@ -721,12 +694,10 @@
 
 
                                                 </div>
-                                        </div>
                                 </div>
 
                                 <div class="our__product__item">
-                                        <div class="row">
-                                                <div class="col-1-of-3">
+                                                <div class="content__left">
                                                         <div class="one__product-photo">
                                                                 <img src="img/product/3.png" alt="Photo">
                                                                 <div class="new-photo"></div>
@@ -739,7 +710,7 @@
                                                                 <li class="btn__ecology-4"></li>
                                                         </ul>
                                                 </div>
-                                                <div class="col-2-of-3">
+                                                <div class="content__right">
                                                         <div class="right__content-wrap">
                                                                 <h2 class="heading__secondary"><a href="#">Адонис(трава)</a></h2>
                                                                 <div class="reviews-stars">
@@ -862,12 +833,10 @@
 
 
                                                 </div>
-                                        </div>
                                 </div>
 
                                 <div class="our__product__item">
-                                        <div class="row">
-                                                <div class="col-1-of-3">
+                                                <div class="content__left">
                                                         <div class="one__product-photo">
                                                                 <img src="img/product/2.png" alt="Photo">
                                                                 <div class="discount-photo"></div>
@@ -880,7 +849,7 @@
                                                                 <li class="btn__ecology-4"></li>
                                                         </ul>
                                                 </div>
-                                                <div class="col-2-of-3">
+                                                <div class="content__right">
                                                         <div class="right__content-wrap">
                                                                 <h2 class="heading__secondary"><a href="#">Астрагал
                                                                                 перепончатый (трава)</a></h2>
@@ -1026,12 +995,10 @@
 
 
                                                 </div>
-                                        </div>
                                 </div>
 
                                 <div class="our__product__item">
-                                        <div class="row">
-                                                <div class="col-1-of-3">
+                                                <div class="content__left">
                                                         <div class="one__product-photo">
                                                                 <img src="img/product/2.png" alt="Photo">
 
@@ -1043,7 +1010,7 @@
                                                                 <li class="btn__ecology-4"></li>
                                                         </ul>
                                                 </div>
-                                                <div class="col-2-of-3">
+                                                <div class="content__right">
                                                         <div class="right__content-wrap">
                                                                 <h2 class="heading__secondary"><a href="#">Астрагал
                                                                                 перепончатый (трава)</a></h2>
@@ -1190,7 +1157,6 @@
 
 
                                                 </div>
-                                        </div>
                                 </div>
                                 <a href="#" class="show-btn">Показать еще</a>
 
@@ -1240,52 +1206,56 @@
 <!-- close container-->
 
 <!-- start footer.html-->
-<a href="#" class="scrollToTop"></a>
+
+
 <footer class="footer">
         <div class="footer__information">
-            <div class="row">
-                <div class="col-1-of-2">
-                    <a href="/" class="footer__logo">
-                        <img src="img/logo.png" alt="logotype">
-                    </a>
-                    <div class="footer__item-title">Лечебные травы</div> 
-                    <div class="footer__item-title">Народные рецепты</div> 
-                    <div class="footer__item-description">Домашний лечебник — народная медицин</div>
-
-                    <div class="footer__information-description u-margin-top-medium">
-                            Растения и минералы, представленные на нашем сайте,
-                            НЕ являются лекарствами. Абсолютно все растения и минералы
-                            имеют противопоказания. При неправильном применении они могут
-                            нанести серьезный вред здоровью.
-                    </div>  
-
-               
+            <div class="container">
+                <div class="footer__info-wrap">
+                        <div class="footer__info-left">
+                                <a href="/" class="footer__logo">
+                                    <img src="img/logo.png" alt="logotype">
+                                </a>
+                                <div class="footer__item-title">Лечебные травы</div> 
+                                <div class="footer__item-title">Народные рецепты</div> 
+                                <div class="footer__item-description">Домашний лечебник — народная медицин</div>
+            
+                                <div class="footer__information-description u-margin-top-medium">
+                                        Растения и минералы, представленные на нашем сайте,
+                                        НЕ являются лекарствами. Абсолютно все растения и минералы
+                                        имеют противопоказания. При неправильном применении они могут
+                                        нанести серьезный вред здоровью.
+                                </div>  
+            
+                           
+                            </div>
+                            <div class="footer__info-right">
+                                <div class="footer__nav-left">
+                                    <h2 class="heading__secondary">Главное</h2>
+                                    <ul class="footer__navigation__list">
+                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог трав</a></li>
+                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог рецептов</a></li>
+                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Акции</a></li>
+                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Доставка и оплата</a></li>
+                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Контакты</a></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="footer__nav-right ">
+                                        <h2 class="heading__secondary">Информация</h2>
+                                        <ul class="footer__navigation__list">
+                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Как купить</a></li>
+                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы оплаты</a></li>
+                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы доставки</a></li>
+                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Статьи</a></li>
+                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">О нас</a></li>
+                                        </ul>
+                                    </div>
+                                
+                            </div>
                 </div>
-                <div class="col-2-of-4">
-                    <div class="footer__nav-left pull-left-block">
-                        <h2 class="heading__secondary">Главное</h2>
-                        <ul class="footer__navigation__list">
-                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог трав</a></li>
-                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог рецептов</a></li>
-                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Акции</a></li>
-                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Доставка и оплата</a></li>
-                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Контакты</a></li>
-                        </ul>
-                    </div>
 
-                    <div class="footer__nav-right pull-right-block">
-                            <h2 class="heading__secondary">Информация</h2>
-                            <ul class="footer__navigation__list">
-                                <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Как купить</a></li>
-                                <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы оплаты</a></li>
-                                <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы доставки</a></li>
-                                <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Статьи</a></li>
-                                <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">О нас</a></li>
-                            </ul>
-                        </div>
-                    
-                </div>
-            </div>
+         
             <div class="footer__middle">
                     <ul class="icon__navigation-list pull-left-block">
                             <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_vk.png" alt="Photo"></a></li>
@@ -1318,8 +1288,10 @@
                 
             </div>
         </div>
+    </div>
+
         <div class="footer__corporate">
-            <div class="row">
+            <div class="contaner">
                 <div class="footer__corporate-wrap">
                     <div class="footer__corporate-left">
                          © Лечебные травы, 2018. Все права защищены

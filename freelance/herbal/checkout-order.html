@@ -29,31 +29,81 @@
 <!-- start head_account.html-->
 <!-- open .header-->
 <header class="header">
-        <div class="header__items">
-             <div class="row">
-                     <div class="col-1-of-2">
-                         
-                         <a href="/" class="header__logo">
-                             <img src="img/logo.png" alt="logotype">
-                         </a>
-                         <div class="header__item-title">Лечебные травы</div> 
-                         <div class="header__item-title">Народные рецепты</div> 
-                         <div class="header__item-description">Домашний лечебник — народная медицин</div>
-                       
-                     </div>
-                     <div class="col-1-of-2">
-                          <ul class="pull-left-block header__clock">
-                                <li class="header__phone-description">Время работы</li>
-                                <li class="header__phone-clock">С 9:00 до 20:00, ПН-СБ</li>  
-                          </ul>
-          
-                     </div>
-                 </div>
-        </div>        
-       
- </header>
- <!-- close .header -->
- 
+        <div class="container">
+            <div class="header__items">
+                <div class="header__left">
+                    <a href="/" class="header__logo">
+                        <img alt="Photo 1" class="loho__img" src="img/logo.png">
+                    </a>
+                    <div class="logo__description">
+                        <div class="header__item-title">Лечебные травы</div>
+                        <div class="header__item-title">Народные рецепты</div>
+                        <div class="header__item-description">Домашний лечебник — народная медицин</div>
+                    </div>
+    
+                </div>
+                <div class="header__right">
+                    <ul class="header__phone">
+                        <li class="header__phone-number"><span class="icon__phone"><img src="img/icons/icon_phone.png" alt=""></span>+7(812)123-45-67</li>
+                        <li><a href="#" class="link-phone">Обратный звонок</a></li>
+                        <li class="header__phone-clock"><span class="img__clock"><img src="img/icons/icon_clock_mini.png"
+                                    alt=""></span>С 9:00 до 20:00, ПН-СБ</li>
+                    </ul>
+                    <ul class="header__clock">
+                            <li class="header__phone-clock"><span class="img__clock"><img src="img/icons/icon_clock_mini.png"
+                                alt=""></span>С 9:00 до 20:00, ПН-СБ</li>
+                    </ul>
+                </div>
+    
+            </div>
+            <nav class="header__navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">Каталог трав</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Каталог рецептов</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Акции</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Доставка и оплата</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Статьи</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Онлайн-курсы</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__bottom">
+                <div class="header__bottom-wrap">
+                    <a href="#" class="header__trigger " id="mobile-menu"><img src="img/icons/icon_menu.png" alt="Icon Menu">
+                        Меню</a>
+                    <div class="header__bottom-menu">
+                        <a href="#" class="close-btn_new" id="CloseMenuBtn">&times;<span class="text__mnu">Меню</span></a>
+                        <div class="header__bottom-menu__content">
+                        </div>
+                    </div>
+    
+                    <form action="#" method="GET" class="header__search">
+                        <div class="header__search__field">
+                            <input class="header__search__input" type="text" name="search" placeholder="Начните вводить название травы или рецепта..."
+                                value="">
+                            <input class="header__search__input-submit" type="submit" value="">
+                        </div>
+                    </form>
+                    <div class="header__btns">
+                        <div class="header__btns-item">
+                            <span class="header__login-icon header__btns-link">
+                                <a href="#popup__enter" class="login-link">Личный&nbsp;кабинет</a>
+                            </span>
+                        </div>
+                        <div class="header__btns-item">
+                            <a href="#" class="header__basket-icon header__btns-link"></a>
+    
+                            <p><span class="header__btns__link header__btns__desc-cart">Товаров&nbsp;нет</span><br>
+                                <span class="header__btns__link  header__btns-count">0 </span>руб</p>
+                                <span class="header__quantity">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+    <!-- close .header -->
 <!-- end head_account.html-->
 
 <!-- main container-->

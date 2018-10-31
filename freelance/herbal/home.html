@@ -29,44 +29,35 @@
 <!-- start header.html-->
 <!-- open .header-->
 <header class="header">
-    <div class="header__items">
-
-        <div class="row">
-
-            <div class="header__items---wrap">
-                <div class="col-1-of-2">
-                    <div class="header__left">
-                        <a href="/" class="header__logo">
-                            <img alt="Photo 1" class="loho__img" src="img/logo.png">
-                        </a>
-                        <div class="header__item-title">Лечебные травы</div>
-                        <div class="header__item-title">Народные рецепты</div>
-                        <div class="header__item-description">Домашний лечебник — народная медицин</div>
-
-                    </div>
-
+    <div class="container">
+        <div class="header__items">
+            <div class="header__left">
+                <a href="/" class="header__logo">
+                    <img alt="Photo 1" class="loho__img" src="img/logo.png">
+                </a>
+                <div class="logo__description">
+                    <div class="header__item-title">Лечебные травы</div>
+                    <div class="header__item-title">Народные рецепты</div>
+                    <div class="header__item-description">Домашний лечебник — народная медицин</div>
                 </div>
-                <div class="col-1-of-2">
-                    <ul class="pull-left-block header__phone">
-                        <li class="header__phone-number">+7(812)123-45-67</li>
-                        <li><a href="#" class="link-phone">Обратный звонок</a></li>
-                        <li class="header__phone-clock">С 9:00 до 20:00, ПН-СБ</li>
-                    </ul>
-                    <ul class="pull-right-block header__location">
-                        <li сlass="header__location-title">Ваш регион:</li>
-                        <li><a href="#" class="link-location">Санк-Петербург и его область</a></li>
-                    </ul>
 
-                </div>
+            </div>
+            <div class="header__right">
+                <ul class="header__phone">
+                    <li class="header__phone-number"><span class="icon__phone"><img src="img/icons/icon_phone.png" alt=""></span>+7(812)123-45-67</li>
+                    <li><a href="#" class="link-phone">Обратный звонок</a></li>
+                    <li class="header__phone-clock"><span class="img__clock"><img src="img/icons/icon_clock_mini.png"
+                                alt=""></span>С 9:00 до 20:00, ПН-СБ</li>
+                </ul>
+                <ul class="header__location">
+                    <li сlass="header__location-title"><span class="icon__map"><img src="../img/icons/icon_map.png" alt=""></span>Ваш
+                        регион:</li>
+                    <li><a href="#" class="link-location">Санк-Петербург и его область</a></li>
+                </ul>
             </div>
 
         </div>
-    </div>
-    <div class="container">
         <nav class="header__navigation">
-
-
-
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#" class="navigation__link">Каталог трав</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Каталог рецептов</a></li>
@@ -75,27 +66,18 @@
                 <li class="navigation__item"><a href="#" class="navigation__link">Статьи</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Онлайн-курсы</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
-
-
-
             </ul>
-
-
         </nav>
-
-    </div>
-
-
-
-    <div class="header__bottom">
-        <div class="container">
+        <div class="header__bottom">
             <div class="header__bottom-wrap">
+                <a href="#" class="header__trigger " id="mobile-menu"><img src="img/icons/icon_menu.png" alt="Icon Menu">
+                    Меню</a>
+                <div class="header__bottom-menu">
+                    <a href="#" class="close-btn_new" id="CloseMenuBtn">&times;<span class="text__mnu">Меню</span></a>
+                    <div class="header__bottom-menu__content">
+                    </div>
+                </div>
 
-
-
-                <a href="#" id="mobile-menu" class="header__trigger">
-                     <span class="trigger__icons"><img src="img/icons/icon_menu.png"></span>Меню
-                </a>
                 <form action="#" method="GET" class="header__search">
                     <div class="header__search__field">
                         <input class="header__search__input" type="text" name="search" placeholder="Начните вводить название травы или рецепта..."
@@ -103,29 +85,23 @@
                         <input class="header__search__input-submit" type="submit" value="">
                     </div>
                 </form>
-
                 <div class="header__btns">
                     <div class="header__btns-item">
                         <span class="header__login-icon header__btns-link">
                             <a href="#popup__enter" class="login-link">Личный&nbsp;кабинет</a>
                         </span>
-
                     </div>
                     <div class="header__btns-item">
                         <a href="#" class="header__basket-icon header__btns-link"></a>
 
                         <p><span class="header__btns__link header__btns__desc-cart">Товаров&nbsp;нет</span><br>
-                            <span class="header__btns__link  header__btns-count">0 руб</span></p>
+                            <span class="header__btns__link  header__btns-count">0 </span>руб</p>
+                            <span class="header__quantity">0</span>
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
     </div>
-
 
 </header>
 <!-- close .header -->
@@ -135,109 +111,99 @@
 
 <!-- start top_slider.html-->
 <section class="top-slider u-margin-bottom-big">
-    <div class="top-slider__wrapper">
-        <div class="top-slider__wrapper--slide">
-            <div class="row">
-                <h1 class="top__slider-title">Натуральные лечебные травы</h1>
-                <p class="top__slider-descrr"> Наши зарубежные - на любой вкус!</p>
-            </div>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="top__slider-left">
+        <div class="top-slider__wrapper">
+                <div class="top-slider__wrapper--slide">
+                        <div class="top__slider-left">
+                                <h1 class="top__slider-title">Натуральные лечебные травы</h1>
+                                <p class="top__slider-descrr"> Наши зарубежные - на любой вкус!</p>
 
-                        <ul class="top__slider-list">
-                            <li class="top__slider-item"><a href="#" class="top__slider-link">Очищение организма</a></li>
-                            <li class="top__slider-item"><a href="#" class="top__slider-link">Жизненная сила</a></li>
-                            <li class="top__slider-item"><a href="#" class="top__slider-link">Здоровье для вас и
-                                    близких</a></li>
-                        </ul>
-                        <a class="btn btn__orange" href="#">Смотреть каталог</a>
+                                <ul class="top__slider-list">
+                                        <li class="top__slider-item"><a href="#" class="top__slider-link">Очищение
+                                                        организма</a></li>
+                                        <li class="top__slider-item"><a href="#" class="top__slider-link">Жизненная
+                                                        сила</a></li>
+                                        <li class="top__slider-item"><a href="#" class="top__slider-link">Здоровье для
+                                                        вас и
+                                                        близких</a></li>
+                                </ul>
 
-                    </div>
+                                <a class="btn btn__orange" href="#">Смотреть каталог</a>
+
+
+                        </div>
+
+                        <div class="top__slider-right">
+
+                                <img 
+                                        alt="Photo 1" class="composition__photo" src="img/content/img_travy.png">
+
+                        </div>
+
+
+                        <div class="left"></div>
+                        <div class="right"></div>
 
                 </div>
-                <div class="col-1-of-2">
+                <div class="top-slider__wrapper--slide">
+                        <div class="top__slider-left">
+                                <h1 class="top__slider-title">Натуральные лечебные травы</h1>
+                                <p class="top__slider-descrr"> Наши зарубежные - на любой вкус!</p>
 
-                    <div class="top__slider-right">
-                        <img srcset="img/content/img_travy3.png 300w, img/content/img_travy1.png 1000w" sizes="(max-width: 56.25em) 80vw, (max-width: 37.5em) 100vw, 300px"
-                            alt="Photo 1" class="composition__photo" src="img/content/img_travy1.png">
-                    </div>
+                                <ul class="top__slider-list">
+                                        <li class="top__slider-item"><a href="#" class="top__slider-link">Очищение
+                                                        организма</a></li>
+                                        <li class="top__slider-item"><a href="#" class="top__slider-link">Жизненная
+                                                        сила</a></li>
+                                        <li class="top__slider-item"><a href="#" class="top__slider-link">Здоровье для
+                                                        вас и
+                                                        близких</a></li>
+                                </ul>
+                                <a class="btn btn__orange" href="#">Смотреть каталог</a>
+
+
+                        </div>
+
+
+
+                        <div class="top__slider-right">
+                                <img 
+                                        alt="Photo 1" class="composition__photo" src="img/content/img_travy.png">
+                        </div>
+
+                        <div class="left"></div>
+                        <div class="right"></div>
+
+
                 </div>
+                <div class="top-slider__wrapper--slide">
+                        <div class="top__slider-left">
+                                <h1 class="top__slider-title">Натуральные лечебные травы</h1>
+                                <p class="top__slider-descrr"> Наши зарубежные - на любой вкус!</p>
 
-            </div>
-            <div class="left"></div>
-            <div class="right"></div>
+                                <ul class="top__slider-list">
+                                        <li class="top__slider-item"><a href="#" class="top__slider-link">Очищение
+                                                        организма</a></li>
+                                        <li class="top__slider-item"><a href="#" class="top__slider-link">Жизненная
+                                                        сила</a></li>
+                                        <li class="top__slider-item"><a href="#" class="top__slider-link">Здоровье для
+                                                        вас и
+                                                        близких</a></li>
+                                </ul>
+                                <a class="btn btn__orange" href="#">Смотреть каталог</a>
 
+                        </div>
+
+
+                        <div class="top__slider-right">
+                                <img 
+                                        alt="Photo 1" class="composition__photo" src="img/content/img_travy.png"> </div>
+
+                        <div class="left"></div>
+                        <div class="right"></div>
+
+
+                </div>
         </div>
-        <div class="top-slider__wrapper--slide">
-            <div class="row">
-                <h1 class="top__slider-title">Натуральные лечебные травы</h1>
-                <p class="top__slider-descrr"> Наши зарубежные - на любой вкус!</p>
-            </div>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="top__slider-left">
-
-                        <ul class="top__slider-list">
-                            <li class="top__slider-item"><a href="#" class="top__slider-link">Очищение организма</a></li>
-                            <li class="top__slider-item"><a href="#" class="top__slider-link">Жизненная сила</a></li>
-                            <li class="top__slider-item"><a href="#" class="top__slider-link">Здоровье для вас и
-                                    близких</a></li>
-                        </ul>
-                        <a class="btn btn__orange" href="#">Смотреть каталог</a>
-
-                    </div>
-
-                </div>
-                <div class="col-1-of-2">
-
-                    <div class="top__slider-right">
-                        <img srcset="img/content/img_travy3.png 300w, img/content/img_travy1.png 1000w" sizes="(max-width: 56.25em) 80vw, (max-width: 37.5em) 100vw, 300px"
-                            alt="Photo 2" class="composition__photo" src="img/content/img_travy1.png">
-                    </div>
-                </div>
-
-            </div>
-            <div class="left"></div>
-            <div class="right"></div>
-
-        </div>
-        <div class="top-slider__wrapper--slide">
-            <div class="row">
-                <h1 class="top__slider-title">Натуральные лечебные травы</h1>
-                <p class="top__slider-descrr"> Наши зарубежные - на любой вкус!</p>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="top__slider-left">
-
-                        <ul class="top__slider-list">
-                            <li class="top__slider-item"><a href="#" class="top__slider-link">Очищение организма</a></li>
-                            <li class="top__slider-item"><a href="#" class="top__slider-link">Жизненная сила</a></li>
-                            <li class="top__slider-item"><a href="#" class="top__slider-link">Здоровье для вас и
-                                    близких</a></li>
-                        </ul>
-                        <a class="btn btn__orange" href="#">Смотреть каталог</a>
-
-                    </div>
-
-                </div>
-                <div class="col-1-of-2">
-
-                    <div class="top__slider-right">
-                        <img srcset="img/content/img_travy3.png 300w, img/content/img_travy1.png 1000w" sizes="(max-width: 56.25em) 80vw, (max-width: 37.5em) 100vw, 300px"
-                            alt="Photo 3" class="composition__photo" src="img/content/img_travy1.png">
-                    </div>
-                </div>
-
-            </div>
-            <div class="left"></div>
-            <div class="right"></div>
-
-        </div>
-    </div>
-
 
 </section>
 <!-- end top_slider.html-->
@@ -483,6 +449,10 @@
 
         </div>
     </div>
+
+    <a id="go_top" href="#" class="top">
+        <span class="icon"></span>
+    </a>
 </section>
 <!-- end our_product.html-->
 <!-- start slider-recipe.html-->
@@ -490,11 +460,9 @@
     <div class="container">
         <h2 class="heading__primary">Лидеры рейтинга рецептов</h2>
         <p class="recipe__slider-description">Только по отзывам реальных людей</p>
-        <div class="row">
             <div class="recipe-slider__wrapper-slide u-margin-top-medium">
                 <div class="recipe-slider__items">
-                    <div class="row">
-                        <div class="col-1-of-2">
+                        <div class="resipce-slider__item-left">
 
                             <div class="recipe-slider__item u-margin-bottom-medium ">
                                 <div class="recipe__photo">
@@ -548,7 +516,7 @@
                             </div>
 
                         </div>
-                        <div class="col-1-of-2">
+                        <div class="resipce-slider__item-right">
 
                             <div class="recipe-slider__item u-margin-bottom-medium ">
                                 <div class="recipe__photo">
@@ -601,11 +569,9 @@
 
                             </div>
                         </div>
-                    </div>
                 </div>
                 <div class="recipe-slider__items">
-                    <div class="row">
-                        <div class="col-1-of-2">
+                        <div class="resipce-slider__item-left">
 
                             <div class="recipe-slider__item u-margin-bottom-medium ">
                                 <div class="recipe__photo">
@@ -659,7 +625,7 @@
                             </div>
 
                         </div>
-                        <div class="col-1-of-2">
+                        <div class="resipce-slider__item-right">
 
                             <div class="recipe-slider__item u-margin-bottom-medium ">
                                 <div class="recipe__photo">
@@ -712,11 +678,9 @@
 
                             </div>
                         </div>
-                    </div>
                 </div>
                 <div class="recipe-slider__items">
-                    <div class="row">
-                        <div class="col-1-of-2">
+                        <div class="resipce-slider__item-left">
 
                             <div class="recipe-slider__item u-margin-bottom-medium ">
                                 <div class="recipe__photo">
@@ -770,7 +734,7 @@
                             </div>
 
                         </div>
-                        <div class="col-1-of-2">
+                        <div class="resipce-slider__item-right">
 
                             <div class="recipe-slider__item u-margin-bottom-medium ">
                                 <div class="recipe__photo">
@@ -823,17 +787,14 @@
 
                             </div>
                         </div>
-                    </div>
                 </div>
-                <a href="#" class="again-link">Еще лидеры</a>
+                <!-- <a href="#" class="again-link">Еще лидеры</a> -->
             </div>
-        </div>
-    </div>
 </section>
 <!-- end slider-recipe.html-->
 <!-- start our_blog.html-->
 <section class="our-blog u-margin-top-big u-margin-bottom-big">
-    <div class="row">
+    <div class="container">
         <div class="our__wrapper-blog">
             <h2 class="heading__primary">Статьи о травах, здоровье и рецептах народной мидицины</h2>
             <div class="top_left"></div>
@@ -844,7 +805,7 @@
 
                 <div class="our-blog__item">
                     <div class="our-blog__photo">
-                            <img srcset="img/blog/img_b.png 440w, img/content/1.png 1000w" sizes="(max-width: 56.25em) 100vw, (max-width: 37.5em) 100vw, 440px"
+                            <img 
                             alt="Photo 1" class="blog__photo-1" src="img/blog/1.png">
                     </div>
                     <div class="our-blog__main">
@@ -864,7 +825,7 @@
                 </div>
                 <div class="our-blog__item">
                     <div class="our-blog__photo">
-                            <img srcset="img/blog/img_b2.png 440w, img/blog/2.png 1000w" sizes="(max-width: 56.25em) 100vw, (max-width: 37.5em) 100vw, 440px"
+                            <img 
                             alt="Photo 1" class="blog__photo-1" src="img/blog/2.png">
                     </div>
                     <div class="our-blog__main">
@@ -884,7 +845,7 @@
 
                 <div class="our-blog__item">
                     <div class="our-blog__photo">
-                            <img srcset="img/blog/img_b3.png 440w, img/blog/3.png 1000w" sizes="(max-width: 56.25em) 100vw, (max-width: 37.5em) 100vw, 440px"
+                            <img 
                             alt="Photo 1" class="blog__photo-1" src="img/blog/3.png">
                     </div>
                     <div class="our-blog__main">
@@ -911,8 +872,6 @@
         </div>
     </div>
 
-
-
 </section>
 <!-- end our_blog.html-->
 
@@ -920,52 +879,56 @@
 <!-- close container-->
 
 <!-- start footer.html-->
-<a href="#" class="scrollToTop"></a>
+
+
 <footer class="footer">
         <div class="footer__information">
-            <div class="row">
-                <div class="col-1-of-2">
-                    <a href="/" class="footer__logo">
-                        <img src="img/logo.png" alt="logotype">
-                    </a>
-                    <div class="footer__item-title">Лечебные травы</div> 
-                    <div class="footer__item-title">Народные рецепты</div> 
-                    <div class="footer__item-description">Домашний лечебник — народная медицин</div>
-
-                    <div class="footer__information-description u-margin-top-medium">
-                            Растения и минералы, представленные на нашем сайте,
-                            НЕ являются лекарствами. Абсолютно все растения и минералы
-                            имеют противопоказания. При неправильном применении они могут
-                            нанести серьезный вред здоровью.
-                    </div>  
-
-               
+            <div class="container">
+                <div class="footer__info-wrap">
+                        <div class="footer__info-left">
+                                <a href="/" class="footer__logo">
+                                    <img src="img/logo.png" alt="logotype">
+                                </a>
+                                <div class="footer__item-title">Лечебные травы</div> 
+                                <div class="footer__item-title">Народные рецепты</div> 
+                                <div class="footer__item-description">Домашний лечебник — народная медицин</div>
+            
+                                <div class="footer__information-description u-margin-top-medium">
+                                        Растения и минералы, представленные на нашем сайте,
+                                        НЕ являются лекарствами. Абсолютно все растения и минералы
+                                        имеют противопоказания. При неправильном применении они могут
+                                        нанести серьезный вред здоровью.
+                                </div>  
+            
+                           
+                            </div>
+                            <div class="footer__info-right">
+                                <div class="footer__nav-left">
+                                    <h2 class="heading__secondary">Главное</h2>
+                                    <ul class="footer__navigation__list">
+                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог трав</a></li>
+                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог рецептов</a></li>
+                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Акции</a></li>
+                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Доставка и оплата</a></li>
+                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Контакты</a></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="footer__nav-right ">
+                                        <h2 class="heading__secondary">Информация</h2>
+                                        <ul class="footer__navigation__list">
+                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Как купить</a></li>
+                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы оплаты</a></li>
+                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы доставки</a></li>
+                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Статьи</a></li>
+                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">О нас</a></li>
+                                        </ul>
+                                    </div>
+                                
+                            </div>
                 </div>
-                <div class="col-2-of-4">
-                    <div class="footer__nav-left pull-left-block">
-                        <h2 class="heading__secondary">Главное</h2>
-                        <ul class="footer__navigation__list">
-                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог трав</a></li>
-                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог рецептов</a></li>
-                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Акции</a></li>
-                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Доставка и оплата</a></li>
-                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Контакты</a></li>
-                        </ul>
-                    </div>
 
-                    <div class="footer__nav-right pull-right-block">
-                            <h2 class="heading__secondary">Информация</h2>
-                            <ul class="footer__navigation__list">
-                                <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Как купить</a></li>
-                                <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы оплаты</a></li>
-                                <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы доставки</a></li>
-                                <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Статьи</a></li>
-                                <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">О нас</a></li>
-                            </ul>
-                        </div>
-                    
-                </div>
-            </div>
+         
             <div class="footer__middle">
                     <ul class="icon__navigation-list pull-left-block">
                             <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_vk.png" alt="Photo"></a></li>
@@ -998,8 +961,10 @@
                 
             </div>
         </div>
+    </div>
+
         <div class="footer__corporate">
-            <div class="row">
+            <div class="contaner">
                 <div class="footer__corporate-wrap">
                     <div class="footer__corporate-left">
                          © Лечебные травы, 2018. Все права защищены
