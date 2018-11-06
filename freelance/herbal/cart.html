@@ -6,8 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!--для масштабируемых моделей-->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!--для немасштабируемых моделей-->
-    <meta name="viewport" content="width=1366">
+ 
     <!--для ссылок с мобильными телефонами-->
     <meta name="format-detection" content="telephone=no">
     <title>Лечебные травы</title>
@@ -30,8 +29,8 @@
 <!-- open .header-->
 <header class="header">
         <div class="container">
-            <div class="header__items">
-                <div class="header__left">
+            <div class="header__account-items">
+                <div class="header__account-left">
                     <a href="/" class="header__logo">
                         <img alt="Photo 1" class="loho__img" src="img/logo.png">
                     </a>
@@ -42,64 +41,22 @@
                     </div>
     
                 </div>
-                <div class="header__right">
+                <div class="header__account-right">
                     <ul class="header__phone">
                         <li class="header__phone-number"><span class="icon__phone"><img src="img/icons/icon_phone.png" alt=""></span>+7(812)123-45-67</li>
                         <li><a href="#" class="link-phone">Обратный звонок</a></li>
                         <li class="header__phone-clock"><span class="img__clock"><img src="img/icons/icon_clock_mini.png"
                                     alt=""></span>С 9:00 до 20:00, ПН-СБ</li>
                     </ul>
-                    <ul class="header__clock">
-                            <li class="header__phone-clock"><span class="img__clock"><img src="img/icons/icon_clock_mini.png"
-                                alt=""></span>С 9:00 до 20:00, ПН-СБ</li>
+                    <ul class="header__clock-account">
+                            <li сlass="header__location-title"><span class="img__clock-account"><img src="img/icons/icon_clock_mini.png"  class="icon__clock"></span>Время работы</li>
+                            <li class="header__phone-clock-account">С 9:00 до 20:00, ПН-СБ</li>
                     </ul>
                 </div>
     
             </div>
-            <nav class="header__navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link">Каталог трав</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Каталог рецептов</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Акции</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Доставка и оплата</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Статьи</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Онлайн-курсы</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="header__bottom">
-                <div class="header__bottom-wrap">
-                    <a href="#" class="header__trigger " id="mobile-menu"><img src="img/icons/icon_menu.png" alt="Icon Menu">
-                        Меню</a>
-                    <div class="header__bottom-menu">
-                        <a href="#" class="close-btn_new" id="CloseMenuBtn">&times;<span class="text__mnu">Меню</span></a>
-                        <div class="header__bottom-menu__content">
-                        </div>
-                    </div>
-    
-                    <form action="#" method="GET" class="header__search">
-                        <div class="header__search__field">
-                            <input class="header__search__input" type="text" name="search" placeholder="Начните вводить название травы или рецепта..."
-                                value="">
-                            <input class="header__search__input-submit" type="submit" value="">
-                        </div>
-                    </form>
-                    <div class="header__btns">
-                        <div class="header__btns-item">
-                            <span class="header__login-icon header__btns-link">
-                                <a href="#popup__enter" class="login-link">Личный&nbsp;кабинет</a>
-                            </span>
-                        </div>
-                        <div class="header__btns-item">
-                            <a href="#" class="header__basket-icon header__btns-link"></a>
-    
-                            <p><span class="header__btns__link header__btns__desc-cart">Товаров&nbsp;нет</span><br>
-                                <span class="header__btns__link  header__btns-count">0 </span>руб</p>
-                                <span class="header__quantity">0</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+ 
+
         </div>
     
     </header>
@@ -140,20 +97,20 @@
                     <h2 class="heading__secondary"><a class="product-title">Агарикус гриб</a></h2>
                     <p class="product-description"><span class="text-gray">Вес: </span>30г.</p>
                 </div>
-                <div class="product-price">
+                <div class="product-price padding-wrap">
                     <p class="price_n">7500<span class="rubl"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
                     <p class="price_b">8800<span class="rubl"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
                 </div>
-                <div class="product-quantity">
+                <div class="product-quantity padding-wrap">
                     <div class="input-group">
                         <input type="text" value="1" name="quantity" class="quantity-field-f">
                     </div>
                 </div>
 
-                <div class="product-line-price">
+                <div class="product-line-price padding-wrap">
                     <p class="total_price">90&nbsp;000<span class="rubl"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
                 </div>
-                <a class="product-delete"><img src="img/icons/icon_delete-big.png" alt="Icons"></a>
+                <a class="product-delete padding-wrap"><img src="img/icons/icon_delete-big.png" alt="Icons"></a>
             </div>
 
             <div class="product">
@@ -163,23 +120,23 @@
                         <img src="img/product/1.png" alt="Photo">
 
                     </div>
-                    <h2 class="heading__secondary"><a class="product-title">Астрагал перепончатый<br>(трава)</a></h2>
+                    <h2 class="heading__secondary"><a class="product-title">Астрагал перепончатый(трава)</a></h2>
                     <p class="product-description"><span class="text-gray">Вес: </span>50г.</p>
                 </div>
-                <div class="product-price">
+                <div class="product-price padding-wrap">
                     <p class="price_n">1200<span class="rubl"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
                     <p class="price_b">1500<span class="rubl"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
                 </div>
-                <div class="product-quantity">
+                <div class="product-quantity padding-wrap">
                     <div class="input-group">
                         <input type="text" value="1" name="quantity" class="quantity-field-f">
                     </div>
                 </div>
 
-                <div class="product-line-price">
+                <div class="product-line-price padding-wrap">
                     <p class="total_price">9&nbsp;600<span class="rubl"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
                 </div>
-                <a class="product-delete"><img src="img/icons/icon_delete-big.png" alt="Icons"></a>
+                <a class="product-delete padding-wrap"><img src="img/icons/icon_delete-big.png" alt="Icons"></a>
 
             </div>
 
@@ -191,8 +148,8 @@
                                 aria-hidden="true"></i></span></div>
                 </div>
                 <div class="totals-item">
-                    <p class="descr__sub">Ваша скидка <span class="totals-value-sub">5%</span>.Чтобы получить скидку
-                        <span class="totals-value-sub">7%</span>,&nbsp;добавьте еще товары на сумму<span class="totals-value-sub">&nbsp;680рублей</span>
+                    <p class="descr__sub">Ваша скидка <span class="totals-value-sub">5%</span>.<br>Чтобы получить скидку
+                        <span class="totals-value-sub">7%</span>,<br>добавьте еще товары<br> на сумму<span class="totals-value-sub">&nbsp;680рублей</span>
                         .</p>
 
                 </div>
@@ -223,7 +180,7 @@
                 </div>
             </div>
             <div class="phone__quest u-margin-top-small">
-                <p>Есть вопросы? Всегда можно просто позвонить: <span class="green-text">+7 (812) 123-45-67</span></p>
+                <p>Есть вопросы?<br> Всегда можно просто позвонить: <br><span class="green-text">+7 (812) 123-45-67</span></p>
             </div>
         </div>
 
@@ -238,7 +195,7 @@
 <!-- start footer_account.html-->
 <footer class="footer">
     <div class="footer__corporate primary__light">
-        <div class="row">
+        <div class="container">
             <div class="footer__corporate-wrap">
                 <div class="footer__corporate-left">
                     © Лечебные травы, 2018. Все права защищены
@@ -270,6 +227,8 @@
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <!--для подключения плагина bootstrap-fileinput-->
 <script src="js/fileinput.js" type="text/javascript"></script>
+<!--для подключения плагина easy tabs-->
+<script src="js/jquery.easytabs.min.js" type="text/javascript"></script>
 <!--для подключения скриптов fotorama-->
 <script src="js/fotorama.js" type="text/javascript"></script>
 <!--для подключения плагина jscrollpane-->
@@ -277,6 +236,10 @@
 <!--для подключения плагина mousewheel-->
 <script src="js/jquery.mousewheel.js" type="text/javascript"></script>
 <!--для подключения плагина perfect-scrollbar-->
+<script src="js/perfect-scrollbar.jquery.js" type="text/javascript"></script>
+<!--для подключения плагина infinite scroll-->
+<script src="js/infinite-scroll.pkgd.min.js" type="text/javascript"></script>
+
 <script src="js/perfect-scrollbar.jquery.js" type="text/javascript"></script>
 <!--для подключения плагина lightbox 2-->
 <script src="js/lightbox.min.js" type="text/javascript"></script>
