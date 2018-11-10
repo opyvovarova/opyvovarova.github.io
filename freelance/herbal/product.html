@@ -6,8 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!--для масштабируемых моделей-->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!--для немасштабируемых моделей-->
-    <meta name="viewport" content="width=1366">
+ 
     <!--для ссылок с мобильными телефонами-->
     <meta name="format-detection" content="telephone=no">
     <title>Лечебные травы</title>
@@ -20,6 +19,7 @@
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/libs.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="css/styles.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -31,7 +31,7 @@
 <header class="header">
     <div class="container">
         <div class="header__items">
-            <div class="header__left">
+            <div class="header__left wow fadeInLeft" data-wow-duration="10s" data-wow-delay="5s">
                 <a href="/" class="header__logo">
                     <img alt="Photo 1" class="loho__img" src="img/logo.png">
                 </a>
@@ -42,15 +42,15 @@
                 </div>
 
             </div>
-            <div class="header__right">
+            <div class="header__right wow fadeInRight">
                 <ul class="header__phone">
                     <li class="header__phone-number"><span class="icon__phone"><img src="img/icons/icon_phone.png" alt=""></span>+7(812)123-45-67</li>
-                    <li><a href="#" class="link-phone">Обратный звонок</a></li>
+                    <li><a href="#phone__call" class="link-phone">Обратный звонок</a></li>
                     <li class="header__phone-clock"><span class="img__clock"><img src="img/icons/icon_clock_mini.png"
                                 alt=""></span>С 9:00 до 20:00, ПН-СБ</li>
                 </ul>
                 <ul class="header__location">
-                    <li сlass="header__location-title"><span class="icon__map"><img src="../img/icons/icon_map.png" alt=""></span>Ваш
+                    <li сlass="header__location-title"><span class="icon__map"><img src="img/icons/icon_map.png" alt=""></span>Ваш
                         регион:</li>
                     <li><a href="#" class="link-location">Санк-Петербург и его область</a></li>
                 </ul>
@@ -68,38 +68,41 @@
                 <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
             </ul>
         </nav>
-        <div class="header__bottom">
-            <div class="header__bottom-wrap">
-                <a href="#" class="header__trigger " id="mobile-menu"><img src="img/icons/icon_menu.png" alt="Icon Menu">
-                    Меню</a>
-                <div class="header__bottom-menu">
-                    <a href="#" class="close-btn_new" id="CloseMenuBtn">&times;<span class="text__mnu">Меню</span></a>
-                    <div class="header__bottom-menu__content">
-                    </div>
-                </div>
+        <div class="header__bottom " >
 
-                <form action="#" method="GET" class="header__search">
-                    <div class="header__search__field">
-                        <input class="header__search__input" type="text" name="search" placeholder="Начните вводить название травы или рецепта..."
-                            value="">
-                        <input class="header__search__input-submit" type="submit" value="">
-                    </div>
-                </form>
-                <div class="header__btns">
-                    <div class="header__btns-item">
-                        <span class="header__login-icon header__btns-link">
-                            <a href="#popup__enter" class="login-link">Личный&nbsp;кабинет</a>
-                        </span>
-                    </div>
-                    <div class="header__btns-item">
-                        <a href="#" class="header__basket-icon header__btns-link"></a>
+                <div class="header__bottom-wrap">
 
-                        <p><span class="header__btns__link header__btns__desc-cart">Товаров&nbsp;нет</span><br>
-                            <span class="header__btns__link  header__btns-count">0 </span>руб</p>
+                    <a href="#" class="header__trigger " id="mobile-menu"><img src="img/icons/icon_menu.png" alt="Icon Menu">
+                        Меню</a>
+                    <div class="header__bottom-menu">
+                        <a href="#" class="close-btn_new" id="CloseMenuBtn">&times;<span class="text__mnu">Меню</span></a>
+                        <div class="header__bottom-menu__content">
+                        </div>
+                    </div>
+
+                    <form action="#" method="GET" class="header__search">
+                        <div class="header__search__field">
+                            <input class="header__search__input" type="text" name="search" placeholder="Начните вводить название травы или рецепта..."
+                                value="">
+                            <input class="header__search__input-submit" type="submit" value="">
+                        </div>
+                    </form>
+                    <div class="header__btns">
+                        <div class="header__btns-item">
+                            <span class="header__login-icon header__btns-link">
+                                <a href="#popup__enter" class="login-link">Личный&nbsp;кабинет</a>
+                            </span>
+                        </div>
+                        <div class="header__btns-item">
+                            <a href="#" class="header__basket-icon header__btns-link"></a>
+
+                            <p><span class="header__btns__link header__btns__desc-cart">Товаров&nbsp;нет</span><br>
+                                <span class="header__btns__link  header__btns-count">0 </span>руб</p>
                             <span class="header__quantity">0</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+
         </div>
     </div>
 
@@ -115,196 +118,237 @@
 <!-- close container-->
 
 <!-- start footer.html-->
-
-
+<a id="go_top" href="#" class="top">
+    <span class="icon"></span>
+</a>
 <footer class="footer">
-        <div class="footer__information">
-            <div class="container">
-                <div class="footer__info-wrap">
-                        <div class="footer__info-left">
-                                <a href="/" class="footer__logo">
-                                    <img src="img/logo.png" alt="logotype">
-                                </a>
-                                <div class="footer__item-title">Лечебные травы</div> 
-                                <div class="footer__item-title">Народные рецепты</div> 
-                                <div class="footer__item-description">Домашний лечебник — народная медицин</div>
-            
-                                <div class="footer__information-description u-margin-top-medium">
-                                        Растения и минералы, представленные на нашем сайте,
-                                        НЕ являются лекарствами. Абсолютно все растения и минералы
-                                        имеют противопоказания. При неправильном применении они могут
-                                        нанести серьезный вред здоровью.
-                                </div>  
-            
-                           
-                            </div>
-                            <div class="footer__info-right">
-                                <div class="footer__nav-left">
-                                    <h2 class="heading__secondary">Главное</h2>
-                                    <ul class="footer__navigation__list">
-                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог трав</a></li>
-                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог рецептов</a></li>
-                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Акции</a></li>
-                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Доставка и оплата</a></li>
-                                        <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Контакты</a></li>
-                                    </ul>
-                                </div>
-            
-                                <div class="footer__nav-right ">
-                                        <h2 class="heading__secondary">Информация</h2>
-                                        <ul class="footer__navigation__list">
-                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Как купить</a></li>
-                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы оплаты</a></li>
-                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы доставки</a></li>
-                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Статьи</a></li>
-                                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">О нас</a></li>
-                                        </ul>
-                                    </div>
-                                
-                            </div>
-                </div>
 
-         
-            <div class="footer__middle">
-                    <ul class="icon__navigation-list pull-left-block">
-                            <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_vk.png" alt="Photo"></a></li>
-                            <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_ok.png" alt="Photo"></a></li>
-                            <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_fb.png" alt="Photo"></a></li>
-                            <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_telegram.png" alt="Photo"></a></li>
-                            <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_instagram.png" alt="Photo"></a></li>
-    
+    <div class="footer__information">
+        <div class="container">
+            <div class="footer__info-wrap">
+                <div class="footer__info-left">
+                    <a href="/" class="footer__logo">
+                        <img src="img/logo.png" alt="logotype">
+                    </a>
+                    <div class="footer__item-title">Лечебные травы</div>
+                    <div class="footer__item-title">Народные рецепты</div>
+                    <div class="footer__item-description">Домашний лечебник — народная медицин</div>
+
+                    <div class="footer__information-description u-margin-top-small-x">
+                        Растения и минералы, представленные на нашем сайте,
+                        НЕ являются лекарствами. Абсолютно все растения и минералы
+                        имеют противопоказания. При неправильном применении они могут
+                        нанести серьезный вред здоровью.
+                    </div>
+
+
+                </div>
+                <div class="footer__info-right">
+                    <div class="footer__nav-left">
+                        <h2 class="heading__secondary">Главное</h2>
+                        <ul class="footer__navigation__list">
+                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог
+                                    трав</a></li>
+                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Каталог
+                                    рецептов</a></li>
+                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Акции</a></li>
+                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Доставка
+                                    и оплата</a></li>
+                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Контакты</a></li>
                         </ul>
-                        <ul class="footer__call">
-                            <li class="footer__call-title">Остались вопросы?Звоните:</li>
-                            <li class="footer__call-number">+7(812)123-45-67</li>
-                            <li>С 9:00 до 20:00, ПН-СБ</li>
+                    </div>
+
+                    <div class="footer__nav-right ">
+                        <h2 class="heading__secondary">Информация</h2>
+                        <ul class="footer__navigation__list">
+                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Как
+                                    купить</a></li>
+                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы
+                                    оплаты</a></li>
+                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Способы
+                                    доставки</a></li>
+                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">Статьи</a></li>
+                            <li class="footer__navigation__item"><a href="#" class="footer__navigation__link">О нас</a></li>
                         </ul>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="footer__bottom">
-                <div class="row">
-                        <p>Принимаем к оплате:</p>
-                        <ul class="footer__navigation__list__icon-money">
-                            <li class="footer__navigation__item__icon-money"><img src="img/icons/visa.png" alt="Photo"></li>
-                            <li class="footer__navigation__item__icon-money"><img src="img/icons/master.png" alt="Photo"></li>
-                            <li class="footer__navigation__item__icon-money"><img src="img/icons/maestro.png" alt="Photo"></li>
-                            <li class="footer__navigation__item__icon-money"><img src="img/icons/yandex.png" alt="Photo"></li>
-                            <li class="footer__navigation__item__icon-money"><img src="img/icons/webmoney.png" alt="Photo"></li>
-                            <li class="footer__navigation__item__icon-money"><img src="img/icons/sber.png" alt="Photo"></li>
-                            <li class="footer__navigation__item__icon-money"><img src="img/icons/qiwi.png" alt="Photo"></li>
-                        </ul>
+
+            <div class="footer__middle clearfix">
+                <ul class="icon__navigation-list pull-left-block">
+                    <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_vk.png"
+                                alt="Photo"></a></li>
+                    <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_ok.png"
+                                alt="Photo"></a></li>
+                    <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_fb.png"
+                                alt="Photo"></a></li>
+                    <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_telegram.png"
+                                alt="Photo"></a></li>
+                    <li class="icon__navigation-item"><a href="#" class="icon__navigation-link"><img src="img/icons/icon_instagram.png"
+                                alt="Photo"></a></li>
+
+                </ul>
+                <ul class="footer__call pull-left-block">
+                    <li class="footer__call-title">
+                        <span class="icon__phone"><img src="img/icons/icon_phone.png" class="img_phone" alt=""></span>
+                        Остались вопросы? Звоните:
+                    </li>
+                    <li class="footer__call-number">+7(812)123-45-67</li>
+                    <li>С 9:00 до 20:00, ПН-СБ</li>
+
+                </ul>
+            </div>
+
+            <div class="footer__bottom pull-left-block">
+                <div class="container">
+                    <p>Принимаем к оплате:</p>
+                    <ul class="footer__navigation__list__icon-money">
+                        <li class="footer__navigation__item__icon-money"><img src="img/icons/visa.png" alt="Photo"></li>
+                        <li class="footer__navigation__item__icon-money"><img src="img/icons/master.png" alt="Photo"></li>
+                        <li class="footer__navigation__item__icon-money"><img src="img/icons/maestro.png" alt="Photo"></li>
+                        <li class="footer__navigation__item__icon-money"><img src="img/icons/yandex.png" alt="Photo"></li>
+                        <li class="footer__navigation__item__icon-money"><img src="img/icons/webmoney.png" alt="Photo"></li>
+                        <li class="footer__navigation__item__icon-money"><img src="img/icons/sber.png" alt="Photo"></li>
+                        <li class="footer__navigation__item__icon-money"><img src="img/icons/qiwi.png" alt="Photo"></li>
+                    </ul>
                 </div>
-                
+
             </div>
         </div>
     </div>
 
-        <div class="footer__corporate">
-            <div class="contaner">
-                <div class="footer__corporate-wrap">
-                    <div class="footer__corporate-left">
-                         © Лечебные травы, 2018. Все права защищены
-                    </div>
-                    <div class="footer__corporate-center">
-                        Политика конфиденциальности
-                    </div>
-                    <div class="footer__corporate-right">
-                        <p>Дизайн — <span>Александр Льдов   </span></p>
-                    </div>
+    <div class="footer__corporate">
+        <div class="container">
+            <div class="footer__corporate-wrap">
+                <div class="footer__corporate-left">
+                    © Лечебные травы, 2018. Все права защищены
                 </div>
-                
+                <div class="footer__corporate-center">
+                    Политика конфиденциальности
+                </div>
+                <div class="footer__corporate-right">
+                    <p>Дизайн — <span>Александр Льдов </span></p>
+                </div>
             </div>
+
         </div>
+    </div>
 </footer>
 
-<a  href="#our__product" class="popup" id="popup__registr"></a>
-        <div class="popup__content">
-                <div class="form_wrap-checkout">
-                        <form action="#" class="form">
-                        
-                            <h2 class="heading__secondary">Регистрация</h2>
-                            <a href="#our__product" class="popup__close">&times;</a>
-            
-                            <div class="field-wrap">
-                                <label>
-                                    <span class="req">*</span>
-                                </label>
-                                <input type="email"  placeholder="E-mail" required/>
-                            </div>
-                            <div class="field-wrap">
-                                <label>
-                                    <span class="req">*</span>
-                                </label>
-                                <input type="password"  placeholder="Пароль" required/>
-                            </div>
-                            <div class="field-wrap">
-                                <label>
-                                    <span class="req">*</span>
-                                </label>
-                                <input type="password"  placeholder="Повторите пароль" required/>
-                            </div>
-                                
-                            <p><a href="#popup__enter" class="link__back">Вернуться ко входу</a><p>
-                            <p><a  href ="#" class="btn btn__orange">Зарегистрироваться</a></p>
-                        </form>
-                                
-            </div>
-    </div>
+<a href="#our__product" class="popup" id="popup__registr"></a>
+<div class="popup__content">
+    <div class="form_wrap-checkout">
+        <form action="#" class="form">
 
+            <h2 class="heading__secondary">Регистрация</h2>
+            <a href="#our__product" class="popup__close">&times;</a>
+
+            <div class="field-wrap">
+                <label>
+                    <span class="req">*</span>
+                </label>
+                <input type="email" placeholder="E-mail" required />
+            </div>
+            <div class="field-wrap">
+                <label>
+                    <span class="req">*</span>
+                </label>
+                <input type="password" placeholder="Пароль" required />
+            </div>
+            <div class="field-wrap">
+                <label>
+                    <span class="req">*</span>
+                </label>
+                <input type="password" placeholder="Повторите пароль" required />
+            </div>
+
+            <p><a href="#popup__enter" class="link__back">Вернуться ко входу</a>
+                <p>
+                    <p><a href="#" class="btn btn__orange">Зарегистрироваться</a></p>
+        </form>
+
+    </div>
+</div>
+
+<!--Popup phone  -->
+<a href="#phone__call" class="popup phone-popup" id="phone__call"></a>
+<div class="popup__content">
+    <div class="form_wrap-checkout">
+        <form action="#" class="form">
+
+            <h2 class="heading__secondary">Обратный звонок</h2>
+            <a href="#our__product" class="popup__close">&times;</a>
+
+            <div class="field-wrap">
+
+                <input type="text" required="" placeholder="Представьтесь,пожалуйста">            </div>
+            <div class="field-wrap">
+                <label>
+                    <span class="req">*</span>
+                </label>
+                <input type="tel" placeholder="Контактный телефон" required />
+            </div>
+            <div class="text_2"> Нажимая на кнопку. Вы соглашаетесь на <a class="link_personal" href="#"> Обработку перснональных данных</a></div>
+                    <a href="#" class="btn btn__orange">Жду звонка</a>
+        </form>
+
+    </div>
+</div>
 <!--  Popup window enter account  -->
-<a  href="#our__product" class="popup" id="popup__enter"></a>
-    <div class="popup__content">
-                <div class="form_wrap-checkout">
-                        <form action="#" class="form">
-                        
-                            <h2 class="heading__secondary">Вход в личный <br>кабинет</h2>
-                            <a href="#our__product" class="popup__close">&times;</a>
-            
-                            <div class="field-wrap">
-                                <label>
-                                    <span class="req">*</span>
-                                </label>
-                                <input type="email"  placeholder="E-mail" required/>
-                            </div>
-                            <div class="field-wrap">
-                                <label>
-                                    <span class="req">*</span>
-                                </label>
-                                <input type="password"  placeholder="Пароль" required/>
-                            </div>
-                            <p><a href="#popup__recovery" class="forgot_btn">Забыл(а)пароль</a></p>
-                            
-                                
-                            <div class="u-margin-top-medium">Нет аккаунта?<a href="#popup__registr" class="link__back">Зарегистрируйтесь!</a><p>
-                            <p><a  href ="#" class="btn btn__orange">Войти</a></p>
-                        </form>
-                                
+<a href="#our__product" class="popup" id="popup__enter"></a>
+<div class="popup__content">
+    <div class="form_wrap-checkout">
+        <form action="#" class="form">
+
+            <h2 class="heading__secondary">Вход в личный <br>кабинет</h2>
+            <a href="#our__product" class="popup__close">&times;</a>
+
+            <div class="field-wrap">
+                <label>
+                    <span class="req">*</span>
+                </label>
+                <input type="email" placeholder="E-mail" required />
             </div>
-    </div>
-
-    <a  href="#our__product" class="popup" id="popup__recovery"></a>
-    <div class="popup__content">
-                <div class="form_wrap-checkout">
-                        <form action="#" class="form">
-                        
-                            <h2 class="heading__secondary">Восстановление <br>пароля</h2>
-                            <a href="#our__product" class="popup__close">&times;</a>
-                            <p class="text-gray">Введите адрес электронной почты, мы отправим пароль туда</p>
-                            <div class="field-wrap">
-                                <label>
-                                    <span class="req">*</span>
-                                </label>
-                                <input type="email"  placeholder="E-mail" required/>
-                            </div>
-                            <p><a href="#popup__enter" class="link__back">Вернуться ко входу</a><p>
-                            <p><a  href ="#" class="btn btn__orange">Зарегистрироваться</a></p>
-                        </form>
-                                
+            <div class="field-wrap">
+                <label>
+                    <span class="req">*</span>
+                </label>
+                <input type="password" placeholder="Пароль" required />
             </div>
+            <p><a href="#popup__recovery" class="forgot_btn">Забыл(а)пароль</a></p>
+
+
+            <div class="registr">Нет аккаунта?<a href="#popup__registr" class="link__back">Зарегистрируйтесь!</a></div>
+               
+                    <p><a href="#" class="btn btn__orange">Войти</a></p>
+        </form>
+
     </div>
+</div>
 
+<a href="#our__product" class="popup" id="popup__recovery"></a>
+<div class="popup__content">
+    <div class="form_wrap-checkout">
+        <form action="#" class="form">
 
+            <h2 class="heading__secondary">Восстановление <br>пароля</h2>
+            <a href="#our__product" class="popup__close">&times;</a>
+            <p class="text-gray">Введите адрес электронной почты, мы отправим пароль туда</p>
+            <div class="field-wrap">
+                <label>
+                    <span class="req">*</span>
+                </label>
+                <input type="email" placeholder="E-mail" required />
+            </div>
+            <p><a href="#popup__enter" class="link__back">Вернуться ко входу</a>
+                <p>
+                    <p><a href="#" class="btn btn__orange">Зарегистрироваться</a></p>
+        </form>
 
+    </div>
+</div>
 <!-- end footer.html-->
 
 <!-- start html_close.html-->
@@ -321,6 +365,11 @@
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <!--для подключения плагина bootstrap-fileinput-->
 <script src="js/fileinput.js" type="text/javascript"></script>
+<!--для подключения плагина easy tabs-->
+<script src="js/jquery.easytabs.min.js" type="text/javascript"></script>
+<!--для подключения плагина wow-->
+<!-- <script src="js/WOW.js" type="text/javascript"></script> -->
+<!-- <script>new WOW().init();</script> -->
 <!--для подключения скриптов fotorama-->
 <script src="js/fotorama.js" type="text/javascript"></script>
 <!--для подключения плагина jscrollpane-->
