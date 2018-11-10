@@ -1,0 +1,233 @@
+.header{
+    .header__account-items{
+      padding-top: 4rem;
+      margin-bottom: -4rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+        .header__account-left {
+            display: flex;
+            flex-flow: row nowrap;
+            margin-bottom: 3rem;
+            margin-right: 10rem;
+      
+            .header__logo {
+              margin-right: 2rem;
+              margin-top: -1rem;
+      
+      
+            }
+        .logo__description {
+            .header__item-title {
+              color: $color-primary;
+              font-size: 2.2rem;
+              font-family: "Comfortaa";
+              font-weight: 700;
+              line-height: 2.8rem;
+            }
+            .header__item-description {
+              font-size: 1.6rem;
+              font-family: inherit;
+              font-weight: 400;
+              color: $color-gray-dark;
+              font-weight: 400;
+            }
+          }
+    }
+    .header__account-right{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .header__phone {
+      position: relative;
+      height: 135px;
+      margin-bottom: 2rem;
+      z-index: 0;
+      padding: 0;
+      margin-top: 1rem;
+      margin-right: 3rem;
+
+      &-number {
+        font-family: "Roboto", sans-serif;
+        color: $color-primary;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 3.4rem;
+       
+        &:hover {
+          color: $color-secondary;
+          cursor: pointer;
+          transition: 200ms ease;
+        }
+      }
+      .header__phone-clock{
+        opacity: 0;
+      }
+   
+      span.icon__phone {
+        margin-right: 1rem;
+        @include breakpoint(max-width 1200px) {
+          display: none;
+        }
+      }
+  
+      &:hover {
+        cursor: pointer;
+        padding: 2rem 2rem;
+        border-radius: 6px;
+        box-shadow: 0 8px 24px rgba($color-black, 0.15);
+        transform: scale(1.15);
+        background-color: $color-white;
+        z-index: 99;
+      }
+
+      &:hover .header__phone-clock {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .link-phone {
+      position: relative;
+      font-family: inherit;
+      color: $color-primary;
+      font-size: 1.6rem;
+      font-weight: 200;
+      line-height: 2.4rem;
+      transition: 200ms ease;
+      margin-left: 4rem;
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0rem;
+        top: 2rem;
+        background-image: url(../img/underline.png);
+        height: 1px;
+        width: 100%;
+        background-position: no-repeat;
+      }
+      &:hover {
+        position: relative;
+        color: $color-secondary;
+        cursor: pointer;
+        transition: 200ms ease;
+        &:hover:before {
+          position: absolute;
+          content: "";
+          left: 2rem;
+          top: 2rem;
+          background-image: url(../img/underline_hover.png);
+          height: 1px;
+          width: 90%;
+          background-position: no-repeat;
+        }
+      }
+    }
+    .header__phone-clock-account{
+      font-size: 2rem;
+      font-family: inherit;
+      font-weight: 400;
+      color: $color-black;
+     
+    }
+    .header__clock-account{
+      margin-top: 1rem;
+    }
+    span.img__clock-account{
+      position: relative;
+      @include breakpoint(min-width 1200px){
+        visibility: visible;
+      }
+      @include breakpoint(max-width 1199px){
+        visibility: hidden;
+      }
+    }
+    .icon__clock{
+      position: absolute;
+      left: -4rem;
+
+    }
+    .header__phone-clock-account{
+      margin-right: 2rem;
+    }
+      
+    ul.header__clock-account{
+      margin-top: 1.5rem;
+
+    }
+}
+}
+
+@include breakpoint(max-width 999px){
+  .header .header__account-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .header .header__account-items .header__account-right{
+    width: 100%;
+    justify-content: flex-start;
+  }
+ 
+}
+/*****Min 1000px and Max 1199px******/
+@include breakpoint($laptop_min_max) {
+  .header .header__account-items .header__account-left{
+    margin-right: 5rem;
+  }
+  .header .header__account-items .header__phone{
+    margin-right: 2rem;
+  }
+  
+}
+/*****Min 768px and Max 999px******/
+@include breakpoint($landscape_min_max) {
+  
+  .footer .footer__corporate .footer__corporate-right p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .footer .footer__corporate .footer__corporate-wrap{
+    height: 100px;
+  }
+  
+}
+/*****Min 480px and Max 767px******/
+@include breakpoint($tablets_min_max) {
+  .header .header__account-items .header__phone{
+    margin-right: 1rem;
+  }
+  .header .header__account-items .header__account-left{
+    margin-right: 0rem;
+  }
+}
+
+/*****Min 320px and Max 479px******/
+@include breakpoint($portrait_min_max) {
+  .header .header__account-items .header__account-left .logo__description .header__item-title{
+    font-size: 1.8rem;
+  }
+  .header .header__account-items .header__account-left .header__logo img{
+    height: 60px;
+    width: 60px;
+  }
+  .header .header__account-items .header__account-left{
+    margin-right: 0rem;
+  }
+  .header .header__account-items .header__account-left .logo__description .header__item-description{
+    display: none;
+  }
+  .header .header__account-items .header__phone{
+    margin-bottom: 4rem;
+  }
+  .header .header__account-items .link-phone{
+    margin-left: 0rem;
+  }
+  .header .header__account-items ul.header__clock-account{
+    margin-top: -10rem;
+    margin-left: -4rem;
+    margin-bottom: 8rem;
+  }
+}

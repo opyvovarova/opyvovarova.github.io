@@ -1,0 +1,130 @@
+$phone-narrow-breakpoint-max-width: 34em;
+$phone-breakpoint-max-width: 48em;
+$tablet-breakpoint-max-width: 62em;
+
+@mixin media-query($breakpoint) {
+  @if $breakpoint == "phone-narrow" {
+    @media (max-width: $phone-narrow-breakpoint-max-width) {
+      @content;
+    }
+  } @else if $breakpoint == "phone" {
+    @media (max-width: $phone-breakpoint-max-width) {
+      @content;
+    }
+  } @else if $breakpoint == "tablet" {
+    @media (max-width: $tablet-breakpoint-max-width) {
+      @content;
+    }
+  }
+}
+
+.tabs-container {
+  background: $color-white !important;
+}
+ul.tabs-list li.-active {
+  background: $color-white;
+  box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.15);
+  color: $color-primary;
+  border: none;
+  &:hover {
+    color: $color-secondary;
+    cursor: pointer;
+    transition: 200ms ease;
+    text-decoration: none;
+  }
+}
+.tabs-container {
+  background: #e5e5e5;
+}
+
+.tabs-list {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: $color-white;
+
+  li {
+    margin-right: 20px;
+    border-radius: 6px;
+    background-color: $color-white;
+    border-width: 5px;
+    border-style: solid solid none solid;
+    border-color: $color-primary-light;
+
+    // @include media-query("phone") {
+    //   width: 100%;
+    // }
+    > a {
+      padding: 12px 30px;
+    }
+  }
+}
+
+
+.tab {
+  position: relative;
+  display: block;
+  font-size: 1.6rem;
+  font-family: inherit;
+  margin: 0 auto;
+  text-decoration: none;
+  color: $color-primary;
+
+
+  &.-active {
+    color: $color-primary;
+    background: #fff;
+
+  }
+}
+
+@include breakpoint(max-width 1199px) {
+  .tabs-list {
+    flex-direction: column;
+    height: 50px;
+    overflow: hidden;
+    width: 273px;
+    border-radius: 6px;
+    border: 5px solid $color-primary-light;
+
+    li {
+      height: 50px;
+      flex: 0 0 auto;
+      border: none;
+    }
+    li.-active {
+      -webkit-box-ordinal-group: -1; // fixes older Safari issues
+      order: -1;
+
+      > a:after {
+        position: relative;
+        right: -30px;
+        width: 14px;
+        height: 8px;
+        top: 0;
+        content: "\f078";
+        font-size: 16px;
+        font-family: "FontAwesome";
+        color: $color-primary;
+        display: inline-block;
+        float: right;
+      }
+    }
+    &.-is-open {
+      height: auto;
+      position: absolute;
+      z-index: 99;
+    }
+
+    &.-is-open li.-active > a:after {
+      content: "\f077";
+    }
+  }
+  ul.tabs-list li.-active {
+    box-shadow: none;
+    height: 50px;
+    width: 247px;
+  }
+}

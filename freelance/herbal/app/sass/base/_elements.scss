@@ -1,120 +1,264 @@
-button{
+button {
   transition: 200ms ease;
   cursor: pointer;
-  &:hover{
+  &:hover {
     transition: 200ms ease;
-
   }
 }
-
 
 .btn {
   &,
   &:link,
   &:visited {
-      text-decoration: none;
-      display: inline-block;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-white;
+      box-shadow: 0 2px 10px rgba($color-dark-secondary, 0.6);
+      background-color: $color-dark-secondary;
       border-radius: 6px;
-      transition: all .2s;
-      position: relative;
-      font-size: $default-font-size;
-      //Change for the <button> element
-      border: none;
-      cursor: pointer;
-
-      &:hover {
-        color: $color-white;
-        box-shadow: 0 2px 10px rgba($color-dark-secondary, 0.6);
-        background-color: $color-dark-secondary;
-        border-radius: 6px;
     }
-      &:active,
-      &:focus {
-          color: $color-white;
-          outline: none;
-          border-radius: 6px;
-          background-color: $color-dark-secondary-2;
-      }
-
-
+    &:active,
+    &:focus {
+      color: $color-white;
+      outline: none;
+      border-radius: 6px;
+      background-color: $color-dark-secondary-2;
+    }
   }
 
-  &__orange{
+  &__orange {
     text-transform: uppercase;
     padding: 1.5rem 4rem;
     box-shadow: 0 2px 10px rgba($color-secondary, 0.6);
     background-color: $color-secondary;
     color: $color-white;
     font-weight: 700;
-
-}
+  }
   &_orange-small {
     padding: 1rem 3rem;
     color: $color-white;
     box-shadow: 0 2px 10px rgba($color-secondary, 0.6);
     background-color: $color-secondary;
+  }
 }
 
-}
-.btn__center{
+.btn__center {
   display: block;
   margin: 0 auto;
-  
 }
 
+.btn-more {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-primary;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 2.3rem;
+    background-image: url(../img/underline.png);
+    height: 1px;
+    width: 100%;
+    background-position: no-repeat;
+  }
+  &:hover {
+    cursor: pointer;
+    color: $color-secondary;
+    cursor: pointer;
+    transition: 200ms ease;
+  }
 
-.heading__primary{
+  &:hover:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 2.3rem;
+    background-image: url(../img/underline_hover.png);
+    height: 1px;
+    width: 100%;
+    background-position: no-repeat;
+  }
+}
+
+.heading__primary {
   font-family: "Comfortaa", cursive;
   color: $color-black;
   font-size: 4rem;
   font-weight: 300;
   line-height: 54px;
 }
-.heading__secondary{
+.heading__secondary {
   font-family: "Comfortaa", cursive;
   color: $color-black;
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 40px;
 }
-.heading__tertiary{
+.heading__tertiary {
   font-family: inherit;
   color: $color-primary;
   font-size: 2rem;
   font-weight: 400;
 }
-.clearfix{
+.clearfix {
   overflow: hidden;
   clear: both;
 }
 
-.pull-right{
+.pull-right-block {
   float: right;
 }
 
-.pull-left{
+.pull-left-block{
   float: left;
 }
-
-.u-center-text { text-align: center !important; }
-
-.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+.block__none {
+  display: none !important;
+}
+.u-center-text {
+  text-align: center !important;
+}
+.left__block{
+  margin-left: 1rem;
+}
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+.u-margin-bottom-small-x {
+  margin-bottom: 4rem !important;
+}
 .u-margin-bottom-medium {
-    margin-bottom: 6rem !important;
+  margin-bottom: 6rem !important;
 
-    @include respond(tab-port) {
-        margin-bottom: 3rem !important;
-    }
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
 }
 
-.u-margin-bottom-big { 
-    margin-bottom: 10rem !important;
+.u-margin-bottom-big {
+  margin-bottom: 10rem !important;
 
-    @include respond(tab-port) {
-        margin-bottom: 6rem !important;
-    }
+  @include respond(max-width 1000px) {
+    margin-bottom: 4rem !important;
+  }
+  @include respond(max-width 480px) {
+    margin-bottom: 2rem !important;
+  }
 }
-.u-margin-top-small{ margin-top: 2rem !important;}
-.u-margin-top-medium{margin-top: 6rem !important;}
-.u-margin-top-big { margin-top: 8rem !important; }
-.u-margin-top-huge { margin-top: 10rem !important; }
+.u-margin-top-small {
+  margin-top: 2rem !important;
+}
+
+.u-margin-top-small-x {
+  margin-top: 4rem !important;
+}
+.u-margin-top-medium {
+  margin-top: 6rem !important;
+}
+.u-margin-top-big {
+  margin-top: 8rem !important;
+  @include breakpoint($tablets_min_max){
+    margin-top: 0rem !important;
+  }
+}
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+.scrollToTop {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: $color-white;
+  border: 5px solid $color-primary-light;
+  text-align: center;
+  color: $color-primary;
+  text-decoration: none;
+  position: fixed;
+  bottom: 70%;
+  right: 20px;
+  display: none;
+  background: url("../img/icons/icon_arrow3.png") no-repeat 10px 15px;
+}
+.scrollToTop:hover {
+  text-decoration: none;
+}
+.top{
+  margin-top: -7rem;
+  display: block;
+  position: relative;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border: 5px solid $color-primary-light;
+  background-color: $color-white;
+
+  .icon{
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    width: 28px;
+    height: 14px;
+    background-image: url('../img/icons/icon_arrow3.png');
+    background-repeat: no-repeat;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    @include breakpoint(max-width 1200px){
+        position: absolute;
+        left: 50%;
+        top: 1rem;
+      
+    }
+  }
+  @include breakpoint(max-width 1200px){
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: $color-primary-light;
+    margin-bottom: 5rem;
+    
+
+  }
+
+}
+.padding-wrap{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  @include breakpoint($landscape_min_max){
+    padding-top: 1rem;
+    padding-bottom: 3rem; 
+  }
+}
+.top:hover{
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+  }
+
+ 

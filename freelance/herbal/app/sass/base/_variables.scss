@@ -1,6 +1,6 @@
-
 // COLORS
 $color-primary: #84ad40;
+$color-primary-1: #87ad44;
 $color-primary-light: #d8ebbc;
 $color-primary-lignt-l: #f6ffe8;
 
@@ -9,7 +9,6 @@ $color-secondary-yellow: #ffd300;
 $color-dark-secondary: #c76d00;
 $color-dark-secondary-2: #ad5f00;
 $color-secondary-3: #f89c00;
-
 
 $color-white: #fff;
 $color-black: #000;
@@ -26,3 +25,10 @@ $grid-width: 114rem;
 $gutter-vertical: 4rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+
+//Breakpoint
+
+$laptop_min_max: 1000px 1200px;
+$landscape_min_max: 768px 999px;
+$tablets_min_max: 480px 767px;
+$portrait_min_max: 320px 479px;

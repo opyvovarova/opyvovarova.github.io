@@ -1,0 +1,496 @@
+.checkout-section {
+  .back_product {
+    position: relative;
+    padding-left: 4rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    font-weight: 400;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background: url(../img/icons/icon_arrow_back.png) no-repeat;
+    }
+  }
+  .number__list h2 {
+    position: relative;
+    padding-left: 6.5rem;
+    margin-bottom: 4rem;
+
+    &:before {
+      content: counter(h2);
+      counter-increment: h2;
+      font-size: 2rem;
+      position: absolute;
+      left: 0;
+      top: 40%;
+      padding: 1.2rem 0.4rem 0.4rem 0.3rem;
+      background: $color-primary;
+      margin-top: -1.3em;
+      height: 5rem;
+      width: 5rem;
+      line-height: 2rem;
+      border: 0.3rem solid $color-white;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 50%;
+      color: $color-white;
+    }
+
+    .heading__secondary {
+      padding-left: 6.5rem;
+    }
+  }
+}
+
+.header__clock{
+
+  .header__phone-description{
+    font-size: 1.6rem;
+    color: $color-black;
+    font-weight: 400;
+  }
+  .header__phone-clock{
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-black;
+
+  }
+}
+
+.form__item-wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+.form__item-left{
+  flex-basis: 50%;
+  margin-right: 3rem;
+}
+.form__item-right{
+  flex-basis: 50%;
+}
+
+.form_wrap-checkout {
+  border-bottom: 1px solid $color-primary-light;
+  input,
+  textarea {
+    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    background: $color-white;
+    background-image: none;
+    border: 2px solid $color-primary-light;
+    color: $color-gray;
+    border-radius: 6px;
+  }
+  input[type="tel"] {
+    margin-right: 2rem;
+  }
+
+  .field-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    margin-bottom: 3rem;
+    label {
+      background-color: $color-primary;
+      border-radius: 0 6px 0 20px;
+      width: 30px;
+      height: 20px;
+      color: $color-white;
+      position: absolute;
+      top: 0;
+      right: 0px;
+
+      .req {
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+  /** Custom Select **/
+  .custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    width: 100%;
+  }
+  .custom-select-wrapper select {
+    display: none;
+  }
+  .custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  .custom-select-trigger {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    padding: 0 84px 0 22px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $color-gray;
+    line-height: 5rem;
+    border: 2px solid $color-primary-light;
+    background: $color-white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .custom-select-trigger:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: 25px;
+    margin-top: -3px;
+    border-bottom: 2px solid $color-primary;
+    border-right: 2px solid $color-primary;
+    transform: rotate(45deg) translateY(-50%);
+    transition: all 0.4s ease-in-out;
+    transform-origin: 50% 0;
+  }
+  .custom-select.opened .custom-select-trigger:after {
+    margin-top: 3px;
+    border-bottom: 1px solid $color-secondary;
+    border-right: 1px solid $color-secondary;
+    transform: rotate(-135deg) translateY(-50%);
+  }
+  .custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    margin: 15px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+    z-index: 10;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+  }
+  .custom-select.opened .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(0);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .custom-option {
+    position: relative;
+    display: block;
+    padding: 10px 22px;
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-primary;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  .custom-option:first-of-type {
+    border-radius: 4px 4px 0 0;
+  }
+  .custom-option:last-of-type {
+    border-bottom: 0;
+    border-radius: 0 0 4px 4px;
+  }
+  .custom-option:hover,
+  .custom-option.selection {
+    background: $color-white;
+    color: $color-secondary;
+  }
+  .shopping__cart-overflow {
+    width: 100%;
+    height: 161px;
+    overflow: auto;
+
+    .product {
+      padding-top: 1rem;
+      border-bottom: 1px solid $color-primary-light;
+      width: 100%;
+      &:first-child {
+        border-top: 1px solid $color-primary-light;
+      }
+    }
+
+    .product-details {
+      width: 60%;
+      position: relative;
+      .heading__secondary {
+        font-size: 1.8rem;
+        position: absolute;
+        top: -1.5rem;
+        left: 6rem;
+      }
+    }
+
+    .product-line-price{
+      float: left;
+      width: 15%;
+    }
+
+    .product-image {
+      height: 50px;
+      width: 50px;
+      float: left;
+      margin-right: 1rem;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .count__quantity {
+      font-size: 2rem;
+      font-family: inherit;
+      color: $color-black;
+      font-weight: 400;
+    }
+
+    .total_price {
+      font-size: 2rem;
+      font-family: inherit;
+      color: $color-black;
+      font-weight: 400;
+      .rubl{
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .totals-value{
+    .rubl{
+      font-size: 3rem;
+    }
+  }
+  .totals-item {
+    .descr__sub {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $color-gray;
+      margin-left: 4rem;
+    }
+    .totals-value-discount {
+      font-size: 3rem;
+      color: $color-black;
+      font-weight: 400;
+      line-height: 4.4rem;
+      .rubl{
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .unstyled {
+    padding: 0;
+    li {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+
+      label {
+        font-weight: 400;
+      }
+    }
+  }
+  .styled-checkbox {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+    // Box.
+    & + label:before {
+      content: "";
+      margin-right: 10px;
+      margin-top: -1rem;
+      display: inline-block;
+      vertical-align: text-top;
+      border: 2px solid $color-primary-light;
+      border-radius: 6px;
+      width: 30px;
+      height: 30px;
+      background: white;
+    }
+    // Box checked
+    &:checked + label:before {
+      border: 2px solid $color-secondary;
+      background: $color-secondary;
+    }
+
+    // Box hover
+    &:hover + label:before {
+      background: $color-secondary;
+      border: 2px solid $color-secondary;
+    }
+    // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 5px;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white,
+        4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+      transform: rotate(45deg);
+    }
+  }
+  .btn__orange {
+    float: right;
+    width: 270px;
+  }
+}
+@include breakpoint(max-width 1199px){
+  .form__item-wrap{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .form__item-left{
+    width: 100%;
+  }
+  .form__item-right{
+    width: 100%;
+  }
+  .form_wrap-checkout .shopping__cart-overflow{
+    overflow: hidden;
+    height: auto;
+  }
+
+}
+.phone__quest p br{
+  display: none;
+}
+@include breakpoint(max-width 767px){
+  .phone__quest p br br{
+    display: block;
+  }
+}
+@include breakpoint (max-width 479px){
+  .phone__quest p br{
+    display: block;
+  }
+}
+/*****Min 1000px and Max 1199px******/
+@include breakpoint($laptop_min_max) {
+  .checkout-section .form{
+      margin-bottom: 7rem;
+    }
+
+    .form_wrap-checkout .shopping__cart-overflow{
+      overflow: hidden;
+      height: auto;
+    }
+    .checkout-section .form_wrap-checkout .btn__orange{
+      margin-bottom: 10rem;
+    }
+}
+
+/*****Min 768px and Max 999px******/
+@include breakpoint($landscape_min_max) {
+  .header .header__account-items .link-phone{
+    margin-left: 0rem;
+  }
+  .form_wrap-checkout .shopping__cart-overflow .product-line-price{
+    float: right;
+  }
+  .form_wrap-checkout .shopping__cart-overflow .product{
+    position: relative;
+  }
+  .checkout-section .count__quantity{
+      position: absolute;
+      top: 50px;
+      right: 130px;
+  }
+  .form_wrap-checkout .shopping__cart-overflow .product{
+    padding-right: 3rem;
+  }
+  .checkout-section .form_wrap-checkout .btn__orange{
+    margin-bottom: 8rem;
+  }
+}
+
+
+/*****Min 480px and Max 767px******/
+@include breakpoint($tablets_min_max) {
+
+      .form_wrap-checkout .field-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: space-between;
+      }
+      .header .header__account-items .link-phone{
+        margin-left: 0;
+      }
+      .form_wrap-checkout .field-wrap input[type="tel"]{
+        margin-bottom: 3rem;
+      }
+    .form_wrap-checkout .shopping__cart-overflow .product-line-price {
+          width: 80%;
+      }
+      .form_wrap-checkout .shopping__cart-overflow .product-quantity{
+        display: none;
+        
+      }
+      .checkout-section .form_wrap-checkout .btn__orange{
+        margin-bottom: 8rem;
+        width: 100%;
+      }
+}
+
+/*****Min 320px and Max 479px******/
+@include breakpoint($portrait_min_max) {
+  .breadcrumbs__pages{
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .form_wrap-checkout .shopping__cart-overflow{
+    overflow: hidden;
+    height: auto;
+  }
+  .checkout-section .totals .totals-item{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .totals{
+    text-align: right;
+  }
+  .checkout-section .form_wrap-checkout .btn__orange{
+    margin-bottom: 8rem;
+    width: 100%;
+  }
+  .phone__quest p br{
+    display: block;
+  }
+}
+
+
