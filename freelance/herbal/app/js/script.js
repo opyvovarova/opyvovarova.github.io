@@ -416,35 +416,7 @@ $(document).ready(function() {
     var accordion = new Accordion($("#accordion"), false);
   });
 
-  /**Slider gallery product*/
-  $(".cd-gallery").slick({
-    infinite: true,
-    autoplay: false,
-    adaptiveHeight: true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: true,
-    autoplaySpeed: 2000,
-    focusOnSelect: true,
-    responsive: [
-      {
-        breakpoint: 999,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 479,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
+  
   /****Close*****/
   /*top-form validation*/
   if (document.getElementById("top-form")) {
@@ -609,3 +581,43 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
+
+
+/**Slider gallery product*/
+
+  
+  $('.cd-gallery').slick({
+    infinite: true,
+    autoplay: false,
+    adaptiveHeight: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    //centerMode: true,
+    variableWidth: true,
+    autoplaySpeed: 20,
+    //focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 999,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 479,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });

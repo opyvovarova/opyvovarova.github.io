@@ -51,8 +51,9 @@
                         <div class="tab-1__top">
                             <a class="back_product" href="#">Вернуться к покупкам</a>
                             <div class="field field_style field_full">
-                                C <input class="input-calendar" type="date" placeholder="01.05.2018"> по
-                                <input class="input-calendar" type="date" placeholder="01.06.2018"> всего <span class="count__order">&nbsp;6</span>&nbsp;заказов
+                            <span>C&nbsp; </span> <input class="input-calendar" type="date" placeholder="01.05.2018"> 
+                            </br><span>по</span> <input class="input-calendar" type="date" placeholder="01.06.2018"></br>
+                             <span class="pre_count">всего <span class="count__order">&nbsp;6</span>&nbsp;заказов</span> 
                             </div>
 
                         </div>
@@ -70,14 +71,27 @@
                             <div class="order-descr">
 
                                 <div class="order-details">
+                                    <p><span class="order_label">Заказ</span></p>
                                     <p><span class="order_number">413&nbsp;224</span>&nbsp;от 01.06.2018</p>
                                 </div>
-                                <div class="order-price">1400p.</div>
 
-                                <div class="order-delivery not__delivery"></div>
+                                <div class="order-row">
+                                    <div class="order-price">
+                                        <span class="order_label">Сумма заказа</span>
+                                        <span class="order_price-detail">1400р.</span>
+                                    </div>
+            
+                                    <div class="order-delivery">
+                                        <span class="order_label">Доставлен</span>
+                                        <span class="order_delivery-detail">26.05.2018</span>
+                                    </div>
+                                </div>
 
-                                <div class="order-status">Доставка</div>
-                                <div class="order-repeat">Повторить</div>
+                                <div class="order-row">
+                                    <span class="order-label">Статус</span>
+                                    <div class="order-status">Выполнен</div>
+                                    <div class="order-repeat">Повторить</div>
+                                </div>                                
 
                                 <div id="order__content" class="order__content">
 
@@ -149,136 +163,468 @@
 
                             <div class="order-descr">
 
-                                <div class="order-details">
-                                    <p><span class="order_number">413&nbsp;224</span>&nbsp;от 24.05.2018</p>
-                                </div>
-                                <div class="order-price">435p.</div>
-
-                                <div class="order-delivery">26.05.2018</div>
-
-                                <div class="order-status">Выполнен</div>
-                                <div class="order-repeat">Повторить</div>
-                                <div id="order__content" class="order__content">
-
-                                    <div class="column-labels">
-                                        <label class="order-details-product">Товар</label>
-                                        <label class="order-quantity">Количество</label>
-                                        <label class="order-discount">Скидка</label>
-                                        <label class="order-price-product"></label>
-
+                                    <div class="order-details">
+                                        <p><span class="order_label">Заказ</span></p>
+                                        <p><span class="order_number">413&nbsp;224</span>&nbsp;от 01.06.2018</p>
                                     </div>
-                                    <div class="order">
-
-                                        <div class="order-details-product">
-                                            <div class="order-image">
-                                                <img src="img/product/1.png" alt="Photo">
-
-                                            </div>
-                                            <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+    
+                                    <div class="order-row">
+                                        <div class="order-price">
+                                            <span class="order_label">Сумма заказа</span>
+                                            <span class="order_price-detail">1400р.</span>
                                         </div>
-                                        <div class="order-quantity">
-                                            <div class="count__quantity">
-                                                12
-                                            </div>
-                                        </div>
-                                        <div class="order-discount">
-                                            <p>10%</p>
-
-                                        </div>
-                                        <div class="order-price-product">
-                                            <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
-                                                        aria-hidden="true"></i></span></p>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="order">
-
-                                        <div class="order-details-product">
-                                            <div class="order-image">
-                                                <img src="img/product/1.png" alt="Photo">
-
-                                            </div>
-                                            <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
-                                        </div>
-                                        <div class="order-quantity">
-                                            <div class="count__quantity">
-                                                12
-                                            </div>
-                                        </div>
-                                        <div class="order-discount">
-                                            <p>10%</p>
-                                        </div>
-                                        <div class="order-price-product">
-                                            <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
-                                                        aria-hidden="true"></i></span></p>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="totals">
-                                        <div class="totals-item">
-                                            <label>Итого:&nbsp;</label>
-                                            <div class="totals-value" id="order-subtotal">9&nbsp;500<span class="rubl"><i
-                                                        class="fa fa-rub" aria-hidden="true"></i></span></div>
+                
+                                        <div class="order-delivery">
+                                            <span class="order_label">Доставлен</span>
+                                            <span class="order_delivery-detail">26.05.2018</span>
                                         </div>
                                     </div>
-                                </div>
+                                                                    
+                                    <div class="order-row">
+                                        <span class="order-label">Статус</span>
+                                        <div class="order-status">Выполнен</div>
+                                        <div class="order-repeat">Повторить</div>
+                                    </div>                                
+    
+                                    <div id="order__content" class="order__content">
+    
+                                        <div class="column-labels">
+                                            <label class="order-details-product">Товар</label>
+                                            <label class="order-quantity">Количество</label>
+                                            <label class="order-discount">Скидка</label>
+                                            <label class="order-price-product"></label>
+    
+                                        </div>
+                                        <div class="order">
+    
+                                            <div class="order-details-product">
+                                                <div class="order-image">
+                                                    <img src="img/product/1.png" alt="Photo">
+    
+                                                </div>
+                                                <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+                                            </div>
+                                            <div class="order-quantity">
+                                                <div class="count__quantity">
+                                                    12
+                                                </div>
+                                            </div>
+                                            <div class="order-discount">
+                                                <p>10%</p>
+    
+                                            </div>
+                                            <div class="order-price-product">
+                                                <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
+                                                            aria-hidden="true"></i></span></p>
+                                            </div>
+    
+    
+                                        </div>
+                                        <div class="order">
+    
+                                            <div class="order-details-product">
+                                                <div class="order-image">
+                                                    <img src="img/product/1.png" alt="Photo">
+    
+                                                </div>
+                                                <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+                                            </div>
+                                            <div class="order-quantity">
+                                                <div class="count__quantity">
+                                                    12
+                                                </div>
+                                            </div>
+                                            <div class="order-discount">
+                                                <p>10%</p>
+                                            </div>
+                                            <div class="order-price-product">
+                                                <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
+                                                            aria-hidden="true"></i></span></p>
+                                            </div>
+    
+    
+                                        </div>
+                                        <div class="totals">
+                                            <div class="totals-item">
+                                                <label>Итого:&nbsp;</label>
+                                                <div class="totals-value" id="order-subtotal">9&nbsp;500<span class="rubl"><i
+                                                            class="fa fa-rub" aria-hidden="true"></i></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
 
                             <div class="order-descr">
 
-                                <div class="order-details">
-                                    <p><span class="order_number">413&nbsp;196</span>&nbsp;от 22.05.2018</p>
+                                    <div class="order-details">
+                                        <p><span class="order_label">Заказ</span></p>
+                                        <p><span class="order_number">413&nbsp;224</span>&nbsp;от 01.06.2018</p>
+                                    </div>
+    
+                                    <div class="order-row">
+                                        <div class="order-price">
+                                            <span class="order_label">Сумма заказа</span>
+                                            <span class="order_price-detail">1400р.</span>
+                                        </div>
+                
+                                        <div class="order-delivery">
+                                            <span class="order_label">Доставлен</span>
+                                            <span class="order_delivery-detail">26.05.2018</span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="order-row">
+                                        <span class="order-label">Статус</span>
+                                        <div class="order-status">Выполнен</div>
+                                        <div class="order-repeat">Повторить</div>
+                                    </div>                                
+    
+                                    <div id="order__content" class="order__content">
+    
+                                        <div class="column-labels">
+                                            <label class="order-details-product">Товар</label>
+                                            <label class="order-quantity">Количество</label>
+                                            <label class="order-discount">Скидка</label>
+                                            <label class="order-price-product"></label>
+    
+                                        </div>
+                                        <div class="order">
+    
+                                            <div class="order-details-product">
+                                                <div class="order-image">
+                                                    <img src="img/product/1.png" alt="Photo">
+    
+                                                </div>
+                                                <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+                                            </div>
+                                            <div class="order-quantity">
+                                                <div class="count__quantity">
+                                                    12
+                                                </div>
+                                            </div>
+                                            <div class="order-discount">
+                                                <p>10%</p>
+    
+                                            </div>
+                                            <div class="order-price-product">
+                                                <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
+                                                            aria-hidden="true"></i></span></p>
+                                            </div>
+    
+    
+                                        </div>
+                                        <div class="order">
+    
+                                            <div class="order-details-product">
+                                                <div class="order-image">
+                                                    <img src="img/product/1.png" alt="Photo">
+    
+                                                </div>
+                                                <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+                                            </div>
+                                            <div class="order-quantity">
+                                                <div class="count__quantity">
+                                                    12
+                                                </div>
+                                            </div>
+                                            <div class="order-discount">
+                                                <p>10%</p>
+                                            </div>
+                                            <div class="order-price-product">
+                                                <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
+                                                            aria-hidden="true"></i></span></p>
+                                            </div>
+    
+    
+                                        </div>
+                                        <div class="totals">
+                                            <div class="totals-item">
+                                                <label>Итого:&nbsp;</label>
+                                                <div class="totals-value" id="order-subtotal">9&nbsp;500<span class="rubl"><i
+                                                            class="fa fa-rub" aria-hidden="true"></i></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="order-price">2765p.</div>
-
-                                <div class="order-delivery">24.05.2018</div>
-
-                                <div class="order-status">Выполнен</div>
-                                <div class="order-repeat">Повторить</div>
-
-                            </div>
-
-                            <div class="order-descr">
-
-                                <div class="order-details">
-                                    <p><span class="order_number">413&nbsp;139</span>&nbsp;от 18.05.2018</p>
+    
+                                <div class="order-descr">
+    
+                                        <div class="order-details">
+                                            <p><span class="order_label">Заказ</span></p>
+                                            <p><span class="order_number">413&nbsp;224</span>&nbsp;от 01.06.2018</p>
+                                        </div>
+        
+                                        <div class="order-row">
+                                            <div class="order-price">
+                                                <span class="order_label">Сумма заказа</span>
+                                                <span class="order_price-detail">1400р.</span>
+                                            </div>
+                    
+                                            <div class="order-delivery">
+                                                <span class="order_label">Доставлен</span>
+                                                <span class="order_delivery-detail">26.05.2018</span>
+                                            </div>
+                                        </div>
+                                                                        
+                                        <div class="order-row">
+                                            <span class="order-label">Статус</span>
+                                            <div class="order-status">Выполнен</div>
+                                            <div class="order-repeat">Повторить</div>
+                                        </div>                                
+        
+                                        <div id="order__content" class="order__content">
+        
+                                            <div class="column-labels">
+                                                <label class="order-details-product">Товар</label>
+                                                <label class="order-quantity">Количество</label>
+                                                <label class="order-discount">Скидка</label>
+                                                <label class="order-price-product"></label>
+        
+                                            </div>
+                                            <div class="order">
+        
+                                                <div class="order-details-product">
+                                                    <div class="order-image">
+                                                        <img src="img/product/1.png" alt="Photo">
+        
+                                                    </div>
+                                                    <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+                                                </div>
+                                                <div class="order-quantity">
+                                                    <div class="count__quantity">
+                                                        12
+                                                    </div>
+                                                </div>
+                                                <div class="order-discount">
+                                                    <p>10%</p>
+        
+                                                </div>
+                                                <div class="order-price-product">
+                                                    <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
+                                                                aria-hidden="true"></i></span></p>
+                                                </div>
+        
+        
+                                            </div>
+                                            <div class="order">
+        
+                                                <div class="order-details-product">
+                                                    <div class="order-image">
+                                                        <img src="img/product/1.png" alt="Photo">
+        
+                                                    </div>
+                                                    <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+                                                </div>
+                                                <div class="order-quantity">
+                                                    <div class="count__quantity">
+                                                        12
+                                                    </div>
+                                                </div>
+                                                <div class="order-discount">
+                                                    <p>10%</p>
+                                                </div>
+                                                <div class="order-price-product">
+                                                    <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
+                                                                aria-hidden="true"></i></span></p>
+                                                </div>
+        
+        
+                                            </div>
+                                            <div class="totals">
+                                                <div class="totals-item">
+                                                    <label>Итого:&nbsp;</label>
+                                                    <div class="totals-value" id="order-subtotal">9&nbsp;500<span class="rubl"><i
+                                                                class="fa fa-rub" aria-hidden="true"></i></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
-                                <div class="order-price">0p.</div>
+                                
+                                <div class="order-descr">
 
-                                <div class="order-delivery not__delivery"></div>
-
-                                <div class="order-status">Отменен</div>
-                                <div class="order-repeat">Повторить</div>
-                            </div>
-
-                            <div class="order-descr">
-
-                                <div class="order-details">
-                                    <p><span class="order_number">413&nbsp;087</span>&nbsp;от 11.05.2018</p>
-                                </div>
-                                <div class="order-price">3240p.</div>
-
-                                <div class="order-delivery">13.05.2018</div>
-
-                                <div class="order-status">Выполнен</div>
-                                <div class="order-repeat">Повторить</div>
-                            </div>
-
-                            <div class="order-descr">
-
-                                <div class="order-details">
-                                    <p><span class="order_number">413&nbsp;033</span>&nbsp;от 07.05.2018</p>
-                                </div>
-                                <div class="order-price">12322p.</div>
-
-                                <div class="order-delivery">09.05.2018</div>
-
-                                <div class="order-status">Выполнен</div>
-                                <div class="order-repeat">Повторить</div>
-                            </div>
-
+                                        <div class="order-details">
+                                            <p><span class="order_label">Заказ</span></p>
+                                            <p><span class="order_number">413&nbsp;224</span>&nbsp;от 01.06.2018</p>
+                                        </div>
+        
+                                        <div class="order-row">
+                                            <div class="order-price">
+                                                <span class="order_label">Сумма заказа</span>
+                                                <span class="order_price-detail">1400р.</span>
+                                            </div>
+                    
+                                            <div class="order-delivery">
+                                                <span class="order_label">Доставлен</span>
+                                                <span class="order_delivery-detail">26.05.2018</span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="order-row">
+                                            <span class="order-label">Статус</span>
+                                            <div class="order-status">Выполнен</div>
+                                            <div class="order-repeat">Повторить</div>
+                                        </div>                                
+        
+                                        <div id="order__content" class="order__content">
+        
+                                            <div class="column-labels">
+                                                <label class="order-details-product">Товар</label>
+                                                <label class="order-quantity">Количество</label>
+                                                <label class="order-discount">Скидка</label>
+                                                <label class="order-price-product"></label>
+        
+                                            </div>
+                                            <div class="order">
+        
+                                                <div class="order-details-product">
+                                                    <div class="order-image">
+                                                        <img src="img/product/1.png" alt="Photo">
+        
+                                                    </div>
+                                                    <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+                                                </div>
+                                                <div class="order-quantity">
+                                                    <div class="count__quantity">
+                                                        12
+                                                    </div>
+                                                </div>
+                                                <div class="order-discount">
+                                                    <p>10%</p>
+        
+                                                </div>
+                                                <div class="order-price-product">
+                                                    <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
+                                                                aria-hidden="true"></i></span></p>
+                                                </div>
+        
+        
+                                            </div>
+                                            <div class="order">
+        
+                                                <div class="order-details-product">
+                                                    <div class="order-image">
+                                                        <img src="img/product/1.png" alt="Photo">
+        
+                                                    </div>
+                                                    <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+                                                </div>
+                                                <div class="order-quantity">
+                                                    <div class="count__quantity">
+                                                        12
+                                                    </div>
+                                                </div>
+                                                <div class="order-discount">
+                                                    <p>10%</p>
+                                                </div>
+                                                <div class="order-price-product">
+                                                    <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
+                                                                aria-hidden="true"></i></span></p>
+                                                </div>
+        
+        
+                                            </div>
+                                            <div class="totals">
+                                                <div class="totals-item">
+                                                    <label>Итого:&nbsp;</label>
+                                                    <div class="totals-value" id="order-subtotal">9&nbsp;500<span class="rubl"><i
+                                                                class="fa fa-rub" aria-hidden="true"></i></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="order-descr">
+        
+                                            <div class="order-details">
+                                                <p><span class="order_label">Заказ</span></p>
+                                                <p><span class="order_number">413&nbsp;224</span>&nbsp;от 01.06.2018</p>
+                                            </div>
+            
+                                            <div class="order-row">
+                                                <div class="order-price">
+                                                    <span class="order_label">Сумма заказа</span>
+                                                    <span class="order_price-detail">1400р.</span>
+                                                </div>
+                        
+                                                <div class="order-delivery">
+                                                    <span class="order_label">Доставлен</span>
+                                                    <span class="order_delivery-detail">26.05.2018</span>
+                                                </div>
+                                            </div>
+                                                                            
+                                            <div class="order-row">
+                                                <span class="order-label">Статус</span>
+                                                <div class="order-status">Выполнен</div>
+                                                <div class="order-repeat">Повторить</div>
+                                            </div>                                
+            
+                                            <div id="order__content" class="order__content">
+            
+                                                <div class="column-labels">
+                                                    <label class="order-details-product">Товар</label>
+                                                    <label class="order-quantity">Количество</label>
+                                                    <label class="order-discount">Скидка</label>
+                                                    <label class="order-price-product"></label>
+            
+                                                </div>
+                                                <div class="order">
+            
+                                                    <div class="order-details-product">
+                                                        <div class="order-image">
+                                                            <img src="img/product/1.png" alt="Photo">
+            
+                                                        </div>
+                                                        <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+                                                    </div>
+                                                    <div class="order-quantity">
+                                                        <div class="count__quantity">
+                                                            12
+                                                        </div>
+                                                    </div>
+                                                    <div class="order-discount">
+                                                        <p>10%</p>
+            
+                                                    </div>
+                                                    <div class="order-price-product">
+                                                        <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
+                                                                    aria-hidden="true"></i></span></p>
+                                                    </div>
+            
+            
+                                                </div>
+                                                <div class="order">
+            
+                                                    <div class="order-details-product">
+                                                        <div class="order-image">
+                                                            <img src="img/product/1.png" alt="Photo">
+            
+                                                        </div>
+                                                        <h2 class="heading__secondary"><a class="order-title">Агарикус гриб</a></h2>
+                                                    </div>
+                                                    <div class="order-quantity">
+                                                        <div class="count__quantity">
+                                                            12
+                                                        </div>
+                                                    </div>
+                                                    <div class="order-discount">
+                                                        <p>10%</p>
+                                                    </div>
+                                                    <div class="order-price-product">
+                                                        <p class="total_price">12&nbsp;500<span class="rubl"><i class="fa fa-rub"
+                                                                    aria-hidden="true"></i></span></p>
+                                                    </div>
+            
+            
+                                                </div>
+                                                <div class="totals">
+                                                    <div class="totals-item">
+                                                        <label>Итого:&nbsp;</label>
+                                                        <div class="totals-value" id="order-subtotal">9&nbsp;500<span class="rubl"><i
+                                                                    class="fa fa-rub" aria-hidden="true"></i></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
 
@@ -334,7 +680,7 @@
                                 </div>
                                 <a class="heading__secondary" href="#">Астрагал перепончатый(трава)</a>
                             </div>
-                            <div class="favourite-price">9500р</div>
+                            <div class="favourite-price">9500<i class="fa fa-rub" aria-hidden="true"></i></div>
 
                             <a class="favourite-basket"></a>
 
